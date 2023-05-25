@@ -1,0 +1,29 @@
+1. Sự khác nhau giữa interface và abstract class
+- Tất cả phương thức trong interface luôn luôn(được hiểu) là abstract.
+- Các phương thức trong abstract class là abstract hoặc không phải là abstract.
+- Có thể implements nhiều interface nhưng không thể extends trực tiếp nhiều class.
+- Các phương thức trong interface luôn luôn phải để là public, khác với abstract class có thể là public hoặc protected.
+
+2. Sự giống nhau giữa interface và abstract class
+- Không thể tạo một biến kiểu interface hoặc abstract class.
+- Nếu là phương thức abstract thì phải được khai báo lại trong class con.
+- Cả interface và abstract class đều có tính kế thừa.
+
+3. @Override là ghi đè những cái có sẵn (có cũng được không có cũng được)
+
+4. Khi nào thì sử dụng interface, khi nào sử dụng abstract class
+- Khi một nhóm đối tượng có cùng bản chất kế thừa từ một class thì sử dụng abstract class.
+
+- Khi một nhóm đối tượng không có cùng bản chất nhưng chúng có hành động giống nhau thì sử dụng interface.
+
+=>     VD trong abstract class Sharp :
+            Cùng hành động : abstract double area();
+            Cùng bản chất :
+                String getColor() {
+                       return this.color;
+                }
+
+
+5. Kế thừa class dùng extends (chỉ extends được 1 class)
+   Kế thừa giao diện dùng implement (implement được nhiều giao diện)
+

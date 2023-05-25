@@ -1,0 +1,10 @@
+BÀI TẬP PHẦN WEBELEMENT VÀ WEBDRIVER
+
+- Phần WebElement:
+	+ Thực hiện các thao tác để chạy auto cho phần New Customer
+	+ Các Locator đã lấy ở bài BT-Locators
+	        https://crm.anhtester.com/admin/clients
+	            admin@example.com/123456
+- Phần WebDriver:
+	+ Thực hiện các thao tác để chạy auto cho phần New Project
+	        https://crm.anhtester.com/admin/projects/project

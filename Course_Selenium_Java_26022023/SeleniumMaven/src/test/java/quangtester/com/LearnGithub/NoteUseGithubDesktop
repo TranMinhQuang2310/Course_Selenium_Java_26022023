@@ -1,0 +1,16 @@
+1. Push Code  :
+    B1 : Chuyển các file cần push lên github vào folder được clone về từ github
+    B2 : Vô Github Desktop
+    B3 : Tích chọn các file cần push
+    B4 : Nhấn "Commit to main"
+    B5 : Nhấn "Push origin"
+
+2 . Pull Code :
+    - Có 2 cách pull code :
+           + Cách 1 : Repository -> Pull
+           + Cách 2 : Fetch origin(trong trường hợp có gì thay đổi trên github thì mới hiển thị chữ pull)
+
+3. Release 1 source code hiện tại trên github để đóng gói lại nội dung tại thời điểm đó => làm trên github Web
+
+Note :
+    - Fetch origin : Làm mới nội dung dưới Local và trên github

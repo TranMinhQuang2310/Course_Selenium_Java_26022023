@@ -1,0 +1,9 @@
+- Format Code : Ctrl + Alt + L
+- Hiển thị chỗ đó đang cần kiểu dữ liệu gì : Chỉ chuột vào đó + Ctrl + Q
+- Cách cài theme giao diện : File -> setting -> plugins -> gõ : dark theme
+- Cách cài icon menu : File -> setting -> plugins -> gõ : icon
+- Import / Export setting của IDEA -> sau này có cài lại thì import dùng hoặc mang sang máy khác
+    1. Export : File ->  Manage IDEA Setting -> Export Setting -> Chọn Select All & chọn đường dẫn để export
+    2. Import : File ->  Manage IDEA Setting -> Import Setting -> Chọn file .rar vừa export
+
+- Ctrl + Q : Hiện mô tả của keyword trong java (class,method,interface,...)

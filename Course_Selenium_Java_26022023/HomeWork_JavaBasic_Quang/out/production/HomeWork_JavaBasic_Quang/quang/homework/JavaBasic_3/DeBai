@@ -1,0 +1,11 @@
+BÀI TẬP PHẦN TOÁN TỬ VÀ ĐIỀU KIỆN IF ELSE
+
+- Tạo class ôn tập các loại toán tử: quan hệ, logic
+- Tạo ra ít nhất 3 biến lưu giá trị trong class đó
+- Thực hiện các loại toán tử trên các biến trên
+
+"- Tạo hàm truyền tham số int ""n"" và Dùng câu lệnh IF Else để đặt điều kiện cho tham số n truyền vào đó:
+        + TH1:  = n
+        + TH2:  > n
+        + TH3:  < n"
+- Gọi lại hàm này xuống main để truyền giá trị vào hàm kiểm tra

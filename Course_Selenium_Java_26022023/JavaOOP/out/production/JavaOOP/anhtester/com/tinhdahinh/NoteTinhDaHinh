@@ -1,0 +1,18 @@
+TÍNH ĐA HÌNH THỂ HIỆN QUA : NẠP CHỒNG VÀ GHI ĐÈ
+- NẠP CHỒNG :
+    + Nạp chồng với thay đổi số lượng tham số
+    + Nạp chồng với thay đổi kiểu dữ liệu của tham số
+
+Câu hỏi về ghi đè phương thức trong java
+1. Có ghi đè được phương thức static không?
+
+ => Không, phương thức static không thể ghi đè được, bằng chứng là đa hình runtime, vấn đề này sẽ được học trong bài sau.
+
+2. Tại sao không ghi đè được phương thức static?
+
+=> Vì phương thức static được ràng buộc với class còn phương thức instance được ràng buộc với đối tượng. Static thuộc
+về vùng nhớ class còn instance thuộc về vùng nhớ heap.
+
+3. Có ghi đè phương thức main được không?
+
+=> Không, vì main là phương thức static.

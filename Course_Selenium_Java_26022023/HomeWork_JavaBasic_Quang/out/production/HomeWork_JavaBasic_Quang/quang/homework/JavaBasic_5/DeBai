@@ -1,0 +1,5 @@
+BÀI TẬP PHẦN COLLECTION KẾT HỢP TẠO HÀM RIÊNG
+
+- Chỉnh sửa bài tập Java Basic 4 với ArrayList
+- Tạo hàm riêng để thêm thông tin cơ bản của một nhân viên vào collection đã học phù hợp
+- Trong hàm main gọi lại hàm trên để in ra thông tin nhân viên đó với vòng lặp for CƠ BẢN

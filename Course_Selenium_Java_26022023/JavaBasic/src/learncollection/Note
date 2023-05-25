@@ -1,0 +1,13 @@
+- Dùng ket = value trong automation test trong trường hợp config khi chạy
+VD : browser = chrome
+     headless = true
+     report = true
+     screenshot = false
+
+- ArrayList sẽ dùng nhiều sau này :
+    add
+    set
+    remove
+    addAll
+    removeAll
+    get

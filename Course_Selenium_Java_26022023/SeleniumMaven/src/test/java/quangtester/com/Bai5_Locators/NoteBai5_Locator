@@ -1,0 +1,23 @@
+-  Các loại Xpath :
+Có 2 loại Xpath: Xpath tuyệt đối và Xpath tương đối.
+    a. Xpath tuyệt đối:
+        Luôn luôn lấy được 1 phần tử
+        Dễ sai vì nếu thay đổi cấu trúc code thì phải fix theo code
+        Xpath tuyệt đối bắt đầu bằng dấu gạch chéo đơn "/", cho phép xác định một đường dẫn tuyệt đối đến đối tượng UI
+            Ví dụ: /html[1]/body[1]/div[1]/div[1]/div[2]/form[1]/div[1]/input[1]
+
+    b. Xpath tương đối :
+        Ưu điểm :
+            Đoạn xpath ngắn hơn xpath tuyệt đối
+            Ổn định hơn Xpath tuyệt đối
+            Dễ xác định hơn
+            Xpath tương đói bắt đầu bằng 2 dấu gạch chéo "//", cho phép xác định một đối tượng UI ở bất kỳ đâu trên trang
+            web, không cần bắt đầu bởi thẻ html trong đường dẫn.
+                Ví dụ: //div//input   cho phép lấy ra toàn bộ thẻ input mà trước đó là một thẻ div
+
+        Nhược điểm :
+            Nếu hệ thống có các thẻ HTML generate thuộc tính chỉ còn tên thẻ thì hơi khó để xác định
+            => Dựa vào vị trí (giống xpath tuyệt đối)
+
+- Cách để coi password bị hide bởi dấu chấm :
+    => Mở F12 => Trỏ chuột vô password bị hide => đổi type="password" thành type="text"

@@ -1,0 +1,8 @@
+PACKAGE :
+- Bố trí gọn source code
+- Có thể chứa class java để thực thi code
+- Đóng gói code theo các package chỉ định => tránh edit nhầm , permission
+- Run nhiều class thông qua pacckage
+- Cách tạo tên package con nhanh : dùng dấu chấm
+    VD : muốn tạo package cha là Quang , package con là Teo
+            => nhập Quang.Teo

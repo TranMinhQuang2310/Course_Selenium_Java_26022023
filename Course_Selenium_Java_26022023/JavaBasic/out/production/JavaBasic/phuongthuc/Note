@@ -1,0 +1,11 @@
+- THAM SỐ không giới hạn KIỂU DỮ LIỆU truyền vào. Và không giới hạn cùng KIỂU DỮ LIỆU giữa các THAM SỐ với nhau.
+- KIỂU DỮ LIỆU trả về của 1 hàm (return) phải đúng với KIỂU DỮ LIỆU của hàm đó
+
+    VD :
+    private static String getName() {
+        //String là KIỂU DỮ LIỆU
+        //name là THAM SỐ
+            String name = "Quang Hoc Gioi";
+            return name;
+    }
+

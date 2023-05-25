@@ -1,0 +1,7 @@
+BÀI TẬP PHẦN METHOD (PHƯƠNG THỨC) VÀ DATA TYPE (KIỂU DỮ LIỆU)
+*** Tại class Calculator:
+- Tạo hàm tính tổng 2 số nguyên
+
+- Tạo hàm tính tích 2 số thực
+
+*** Gọi lại 2 hàm trên và truyền tham số vào dưới hàm main để chạy

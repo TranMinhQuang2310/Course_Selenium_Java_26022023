@@ -1,0 +1,24 @@
+1. Abstract Class là gì ?
+- Nó là một class
+- Nó chứa phương thức trừu tượng
+- Các class khi kế thừa một abstract class sẽ phải định nghĩa lại các phương thức trừu tượng của abstract class
+- Một class chỉ có thể kế thừa 1 lớp trừu tượng
+- Có 2 loại method là abstract method và method thường:
+    + abstract method là method trống không có thực thi.
+    + method thường là method có thực thi.
+- Không thể khởi tạo đối tượng của abstract class
+- Không hỗ trợ đa kế thừa.
+- Phương thức abstract của abstract class không được phép khai báo nội dung phương thức. Nó chỉ có thể định nghĩa tên
+cũng như các tham số đầu vào.
+- Mức truy cập các hàm của abstract phải ở public hoặc protected để lớp kế thừa có thể định nghĩa lại và các thuộc tính
+của lớp abstract không được khai báo abstract. Ví dụ : khai báo 1 abstract class
+
+VD :
+abstract class BaseClass
+{
+    // phương thức ở mức protected
+    abstract protected void hello();
+
+    // Phương thức ở mức public
+    abstract public void hi();
+}

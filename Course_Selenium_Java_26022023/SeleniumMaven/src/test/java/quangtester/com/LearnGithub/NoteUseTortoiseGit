@@ -1,0 +1,49 @@
+1. Tạo github nhớ điền vài chỗ khi up source thuộc maven :
+    - Initialize this repository with => tích "Add a README file"
+    - Add .gitignore => tích Maven
+    - Choose a license => tích Apache License 2.0
+
+2. Lưu ý khi dùng GIT với công cụ tortoiseGit :
+    2.1 . Push code
+        - Clone từ trên Cloud về Local => folder (reporsitory name)
+        - Copy source từ Local vào folder đ mapping với Cloud
+        - Xác nhận file mới từ Local : Chuột phải -> Git commit
+        - Đẩy source mới lên Cloud với chức năng push
+
+    2.2 Pull code
+        B1: Lấy source lần đầu tiên thì dùng "Git Clone"
+        B2 : Update source mới nhất từ trên CLoud về thì dùng "Pull" (Chuột phải -> Git Syns -> Pull)
+
+    2.3 Lọc file giữ lại Local
+        B1 : Vào file .gitignore
+        - VD : Muốn lọc bỏ folder idea để không đẩy lên Github
+            => Điền vào dưới cùng : .idea
+        - VD : Muốn lọc bỏ toàn bộ file có đuôi .jpg
+            => Điền vào dưới cùng : *.jpg
+
+        B2 : Trường hợp folder hoặc file đã được push lên github
+            => Bắt buộc xóa dưới Local
+
+        B3 : Thực hiện : Chuột phải -> Git commit... -> Commit & Push
+
+3. Cách chuyển branch :
+    B1 : Chuột phải -> tortoiseGit -> Switch / Checkout... => Chọn nhánh tương ứng
+
+4. Các Folder và File không cần up lên github (Do lúc Run sẽ tự sinh ra) :
+    3.1 Folder :
+        .idea
+        target
+        report
+        out
+
+    3.2 File :
+        .png
+        .jpg
+        .log
+
+5. Phục hồi nội dung của lần push sau cùng :
+    - Chuột phải => Tortoisegit => Revert => Select file cần bỏ ra
+        Hoặc
+    - Delete commit lại
+
+

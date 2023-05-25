@@ -1,0 +1,20 @@
+1. PHẠM VI TRUY CẬP (Access Modifier) :
+Access Modifier     Trong lớp   Trong package   Ngoài package bởi lớp con   Ngoài package
+Private                Y             N                       N                    N
+Default                Y             Y                       N                    N
+Protected              Y             y                       Y                    N
+Public                 Y             Y                       Y                    Y
+
+- Private : chỉ sử dụng trong nội bộ class
+
+- Protected : chỉ sử dụng trong nội bộ package (ngoài class nhưng phải trong cùng package)
+Nhưng để được truy cập bên ngoài package thì phải thông qua kế thừa class
+
+- Default (không phải từ khóa) : khi không có phạm vi truy cập cụ thể thì tính chất Default sẽ áp dụng => chỉ sử dụng
+trong nội bộ package
+
+- Public : gọi ở mọi nơi (ngoài class , ngoài package)
+
+
+
+

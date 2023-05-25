@@ -1,0 +1,2 @@
+1. Cú pháp tìm 1 WebElement
+    driver.findElement(By.className("className"));

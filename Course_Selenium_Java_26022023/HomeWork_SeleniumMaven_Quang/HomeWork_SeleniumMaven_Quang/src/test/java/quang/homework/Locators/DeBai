@@ -1,0 +1,12 @@
+- Xpath tương đối (cách 1-5):
+    + Tạo class mới "LearningLocators" lưu các xpath sau vào biến String và đặt tên có nghĩa theo UI
+    + Vào website: https://crm.anhtester.com/admin/authentication
+admin@example.com/123456
+    + Bắt xpath của trang Login
+    + Bắt xpath menu Customer
+    + Bắt xpath hết Form của trang New Customer
+
+
+- Xpath tương đối (cách 6-10):
+	+ Bắt xpath menu Projects
+	+ Bắt xpath hết Form của trang New Project

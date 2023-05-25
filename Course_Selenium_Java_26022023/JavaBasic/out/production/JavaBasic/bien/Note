@@ -1,0 +1,4 @@
+1.Đặt tên biến :
+- Cùng vị trí (local/instance/static) thì không được trùng nhau
+- Khác vị trí thì được trùng . VD : Biến TOÀN CỤC trùng biến LOCAL được
+- Biến TOÀN CỤC , Biến vừa TOÀN CỤC vừa STATIC không được trùng nhau

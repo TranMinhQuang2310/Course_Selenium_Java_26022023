@@ -1,0 +1,157 @@
+Dùng web : https://app.hrsale.com/erp/desk
+
+    /*
+        Note :
+        - DÙNG DẤU CHẤM (.) để thay thế toàn bộ cho kiểu giá trị tìm kiếm KHÔNG XÁC ĐỊNH (attribute,text)
+            VD : //h6[contains(.,Employees)]
+        - DÙNG DẤU SAO (*) để thay thế cho thẻ bất kỳ => chỉ cần chứa dữ liệu mình cần ,không phân biệt thẻ div,span,...
+            VD : //*[contains(.,'Employees')]
+        - Phân biệt kiểu tìm kiếm và kiểu giá trị tìm kiếm
+            VD:
+                + Kiểu tìm kiếm : starts-with
+                + Kiểu giá trị tìm kiếm : @attribute
+    */
+
+1. Xác định bằng thuộc tính "@" :
+    ĐN : Thuộc tính "@" cho phép lọc các đối tượng thông qua một thuộc tính của nó bên trong thẻ html.
+    Cú pháp : //tagname[@attribute = 'value']
+        VD : //div//input[@id='email']
+             //div[@class='form-control']
+             //a[@href='https://anhtester.com/']
+
+2. Xác định bằng chuỗi text()
+    /*
+    ĐN : text() cho phép lọc các đối tượng UI được trả về dựa trên nội dung text bên trong một thẻ html.
+    Cú pháp :
+        - thẻ [( text() = ' giá trị ')] hoặc [( normalize-space() = ' giá trị ')]
+        -  Trong trường hợp :
+            + text() - lấy đúng khoảng trắng
+            + normalize-space() - chấp nhận bỏ qua khoảng trắng , chỉ cần chứa đúng text là được
+    */
+        VD :
+            + text() : //span[text()='Total clients']
+            + normalize-space() : //h5[normalize-space()='Invoice Payments']
+
+3. Xác định với hàm chứa contains()
+    ĐN : Khi thuộc tính của một phần tử là động, thì bạn có thể sử dụng hàm chứa () cho phần không đổi của phần tử web
+    nhưng bạn cũng có thể sử dụng hàm chứa () trong bất kỳ điều kiện nào khi cần.
+
+    Cú pháp :  // thẻ [ contains ( @attribute , 'giá trị') ]
+        VD : //h6[contains(normalize-space(),'Total')] => Tìm toàn bộ giá trị có tên Total
+             //div[contains(@class,'modal fade show edit-modal-data')] => modal fade show edit-modal-data là đoạn trong
+             html
+
+4. Xác địn với phương thức bắt đầu starts - with
+    /*
+        ĐN : Kiểm tra văn bản bắt đầu của một thuộc tính
+        Cú pháp : // thẻ [ starts-with ( @attribute , ' giá trị ')]
+            VD : //h6[starts-with(normalize-space(), 'Department')] => Tìm giá trị Department ở đầu
+    */
+
+5. Xác định bằng cách sử dụng toán tử or và and
+    a. Toán tử or :
+        /*
+            Giá trị 1	                Giá trị 2	                    Kết quả
+            Sai	                            Sai	                    Không có phần tử
+            Đúng	                        Sai	                        Trả về A
+            Sai	                            Đúng	                    Trả về B
+            Đúng	                        Đúng	                 Trả lại cả hai
+
+        - “or” phân biệt chữ hoa chữ thường , bạn không nên viết hoa “OR”.
+         VD ://*[@class='form-control' or @id='user-message']
+            => Tìm kiếm câu lệnh tìm kiếm có giá trị attribute class = 'form-control' HOẶC
+                có giá trị attribute id = 'user-message'
+             //a[@class='pc-link sidenav-toggle' or normalize-space() = 'Core HR']
+        */
+
+    b. Toán tử and :
+            Giá trị 1	                Giá trị 2	                    Kết quả
+            Sai	                            Sai	                    Không có phần tử
+            Đúng	                        Sai	                    Không có phần tử
+            Sai	                            Đúng	                Không có phần tử
+            Đúng	                        Đúng	                 Trả lại cả hai
+
+         - “and” phân biệt chữ hoa chữ thường , bạn không nên dùng chữ “AND” viết hoa.
+         VD ://*[@class='form-control' or @id='user-message']
+             => Tìm kiếm câu lệnh tìm kiếm có giá trị attribute class = 'form-control' HOẶC
+                có giá trị attribute id = 'user-message'
+             //a[@class='pc-link sidenav-toggle' and normalize-space() = 'Core HR']
+
+6. Xác định với Tổ tiên Ancestor (phần tử đầu tiên)
+    /*
+            ĐN : Nó tìm phần tử trước câu lệnh tổ tiên ancestor và đặt nó làm nút dưới cùng và sau đó bắt đầu tìm các
+            phần tử cha và tổ tiên (ông nội, cố, cốc...) của nút đó.
+                VD : //a[text()='Out of Stock']/ancestor::li
+    */
+
+7. Xác định với Con cháu Descendant
+    /*
+           - ĐN :Thằng này thì ngược với Ancestor. Nó tìm phần tử trước câu lệnh con cháu descendant và đặt nó làm nút
+                trên cùng và sau đó bắt đầu tìm các phần tử con và cháu trong bên trong nó
+           - Sự khác nhau giữa Ancestor và Descendant
+                + Ancestor : thẻ tổ tiên cùng cấp => HT không tính , chỉ tính thẻ bao bọc liền kề
+                + Descendant : thẻ cùng cấp con cháu => HT tính luôn
+
+           - VD : //ul[@class='pc-navbar']/descendant::li
+    */
+
+8. Xác định thông qua preceding (ở trên) và following (ở dưới)
+    a. Following
+        /*
+             - ĐN :Bắt đầu xác định vị trí các phần tử nằm dưới nút cha đã cho. Nó tìm phần tử trước câu lệnh following
+             và đặt nó làm nút trên cùng và sau đó bắt đầu tìm tất cả các phần tử dưới nút đó
+            - VD : //div[@class='pc-mob-header pc-header']/following::nav
+                    => pc-mob-header pc-header là class cha => tìm thẻ nav sau thẻ chứa class cha
+        */
+    b . Preceding
+        /*
+            - ĐN : Bắt đầu xác định vị trí các phần tử nằm trên nút cha đã cho. Nó tìm phần tử trước câu lệnh preceding
+            và đặt nó làm nút dưới cùng và sau đó bắt đầu tìm tất cả các phần tử trên nút đó
+            - VD : //span[normalize-space()='Total Paid']/preceding::h3
+                    => Thẻ span chứa nội dung 'Total Paid' là cha => tìm thẻ h3 trước thẻ chứa class cha
+         */
+
+    => Sự khác nhau giữa Ancestor, Descendant, Following , Preceding :
+        + Ancestor : Không tính thẻ tổ tiên cùng cấp (bao bọc thẻ gốc)
+        + Descendant : Tính luôn các thẻ con cháu cùng cấp (nằm trong thẻ gốc)
+        + Following : lấy các thẻ bên dưới thẻ gốc (không nằm trong thẻ gốc) => tính luôn cùng cấp
+        + Preceding : lấy các thẻ nằm bên trong thẻ gốc => tính luôn cùng cấp
+
+9. Xác định Anh chị em bên dưới với following-sibling và preceding-sibling :
+    a. following-sibling :
+        /*
+           - ĐN : Từ khoá following-sibling (anh chị em bên dưới) lấy ra tất cả các element là anh chị em (ngang hàng)
+           nằm dưới mà phải cùng cấp với nút gốc trong DOM
+           - VD : //div[@class='col-md-6']/following-sibling::div
+                    => Nó lấy ///div[@class='col-md-6'] làm nút ngữ cảnh. Sau đó tìm các thẻ div bên dưới nó và
+                    điều kiện là các thẻ div khác phải là anh chị em (cùng cấp) thì nó sẽ lấy ra hết.
+
+           - VD2 : dùng web https://rise.fairsketch.com/clients -> chọn client -> add client
+                   //label[normalize-space()='Company name']//following-sibling::div/input
+        */
+
+    b. preceding-sibling :
+        /*
+            - ĐN : Từ khoá prededing-sibling (anh chị em bên trên) lấy ra tất cả các element là anh chị em
+            (ngang hàng) nằm trên mà phải cùng cấp với nút gốc trong DOM.
+            - VD : dùng web https://rise.fairsketch.com/clients -> chọn client -> add client
+              //body/div[@role='dialog']/div/div/div/form[@role='form']/div/div[1]/div[1]/preceding-sibling::input
+        */
+
+10. Xác định thông qua parent và child
+    a. parent :
+        /*
+            - ĐN : Tìm kiếm element là cha của nút gốc trước từ khóa parent (1 thẻ con chỉ có 1 thẻ cha - liền kề)
+            - VD : //body//nav//li//li[8]/parent::ul => chỉ lấy 1 thẻ cha bao bọc bên ngoài với thẻ con
+        */
+
+    b.child :
+        /*
+            - ĐN : Tìm kiếm các element là con của nút gốc được định nghĩa trước từ khóa child
+            (1 thẻ cha có nhiều thẻ con)
+            - VD : //body//nav//li//li[8]/child::a => có thể lấy nhiều thẻ con bên trong 1 thẻ cha
+        */
+
+11. Xác định thông qua position
+        VD : //div[@class='dropdown bootstrap-select bs3'][1]
+            => Đổi số cuối cùng để chuyển vị trí

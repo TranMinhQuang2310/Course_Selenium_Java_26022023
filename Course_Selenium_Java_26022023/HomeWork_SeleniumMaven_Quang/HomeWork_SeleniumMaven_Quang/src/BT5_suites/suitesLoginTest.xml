@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite More Class" verbose="1">
+    <test name="FirstTest01">
+        <classes>
+            <class name="quang.homework.BT5_POM.testcases.LoginTest" />
+            <class name="quang.homework.BT5_POM.testcases.ProductTest" />
+        </classes>
+    </test>
+</suite>

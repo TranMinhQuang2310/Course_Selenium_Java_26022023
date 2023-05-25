@@ -1,0 +1,20 @@
+1. TÍNH KẾ THỪA TRONG JAVA OOP (HƯỚNG ĐỐI TƯỢNG)
+- Dùng từ khóa "extends" để thể hiện sự kế thừa của 2 class
+- Nếu lớp cha CÓ hàm xây dựng thì lớp con phải dùng từ khóa "super" để truyền vào đủ các tham số đúng
+với kiểu dữ liệu của hàm xây dựng lớp cha (không cần giống tên tham số)
+    VD :
+        + Lớp cha có hàm xây dựng :
+            public Person(String name, int age, float height)
+        + Lớp con truyền tham số vào :
+            public Student(String name1, int age1 , float height1)
+- Nếu lớp cha KHÔNG có hàm xây dựng thì không cần dùng "super" hoặc nếu CÓ dùng thì khỏi truyền tham số vào
+
+- Trong 1 class có thể có nhiều hàm xây dựng nhưng phải khác tham số
+- Khi nào dùng hàm xây dựng : khi cần truyền giá trị khác nhau cho thuộc tính sau mỗi lần khởi tạo class
+- Công dụng của hàm xây dựng : có được giá trị multi hơn khi khởi tạo class với nhiều bộ data truyền vào
+
+- Trong Java chỉ cho kế thừa từ một class
+- Chúng ta được phép kế thừa liên hoàn từ lớp cha.
+    VD trong bài học : School > Person > Student
+        => Person extends School
+           Student extends Person

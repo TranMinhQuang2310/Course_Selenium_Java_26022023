@@ -1,0 +1,16 @@
+1. Object (Đối tượng) :
+- Là một tên thay mặt cho một class để có thể chấm gọi những thành phần thuộc class đó
+VD : Khai báo đối tượng "ten" thay mặt cho class LearnClassAndObject
+        LearnClassAndObject ten = new LearnClassAndObject();
+        ten.getName();
+- Từ một class có thể tạo nhiều object(đối tượng)
+- Phải khác tên
+
+2. Class (Lớp) :
+- Class là 1 cấu truucs có nhiều thành phaanhf : biến , hàm xây dựng , hàm xử lý , khối , ...
+- Class thì có nhiều đối tượng thể hiện cho 1 class
+- Có nhiều cách khởi tạo class để dùng những thành phần bên trong class đó
+- Có nhiều cách khởi tạo class để dùng những thành phần bên trong class đó :
+    + Đối tượng + từ khóa new
+    + Tên class chấm gọi trực tiếp các thành phần (thành phần phải là static)
+    + Dùng kiểu Annonymus
