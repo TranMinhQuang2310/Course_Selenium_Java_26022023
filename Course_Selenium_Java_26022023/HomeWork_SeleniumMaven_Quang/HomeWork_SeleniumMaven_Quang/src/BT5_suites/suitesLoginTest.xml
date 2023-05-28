@@ -4,7 +4,7 @@
     <test name="FirstTest01">
         <classes>
             <class name="quang.homework.BT5_POM.testcases.LoginTest" />
-            <class name="quang.homework.BT5_POM.testcases.ProductTest" />
+            <class name="quang.homework.BT5_POM.testcases.DashboardTest" />
         </classes>
     </test>
 </suite>

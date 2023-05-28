@@ -1,4 +1,4 @@
-package quangtester.com.pages;
+package quangtester.com.pages.Bai18_Pages_UsePageFactory;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,7 @@ import quangtester.com.keywords.WebUI;
 
 import java.util.List;
 
-public class LoginPage_UsePageFactory {
+public class Bai18_LoginPage_UsePageFactory {
 
         private String URL = "https://crm.anhtester.com/admin/authentication";
         private String PAGETEXT = "Login";
@@ -55,7 +55,7 @@ public class LoginPage_UsePageFactory {
 
         //Khai báo hàm xây dựng
         private WebDriver driver;
-        public LoginPage_UsePageFactory(WebDriver _driver) {
+        public Bai18_LoginPage_UsePageFactory(WebDriver _driver) {
                 driver = _driver;
                 //Gọi hàm initElements của class PageFactory để khởi tạo các WebElement trên
                 //=> Khởi tạo 1 element này với đường truyền là driver đồng thời khởi tạo trên chính class này

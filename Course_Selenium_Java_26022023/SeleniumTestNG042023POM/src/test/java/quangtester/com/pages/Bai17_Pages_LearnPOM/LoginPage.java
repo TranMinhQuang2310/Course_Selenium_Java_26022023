@@ -1,4 +1,4 @@
-package quangtester.com.pages;
+package quangtester.com.pages.Bai17_Pages_LearnPOM;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import quangtester.com.keywords.WebUI;
 
 public class LoginPage {
     //Dùng private để đảm bảo tính đóng gói => Áp dụng tính đóng gói trong OOP
-
+    //Các thuộc tính xác thực
     private String URL = "https://crm.anhtester.com/admin/authentication";
     private String PAGETEXT = "Login";
 

@@ -1,11 +1,10 @@
-package quangtester.com.testcases;
+package quangtester.com.testcases.Bai17_Test_LearnPOM;
 
 import org.testng.annotations.Test;
 import quangtester.com.common.BaseTest;
-import quangtester.com.pages.CustomersPage;
-import quangtester.com.pages.DashboardPage;
-import quangtester.com.pages.LoginPage;
-import org.openqa.selenium.By;
+import quangtester.com.pages.Bai17_Pages_LearnPOM.CustomersPage;
+import quangtester.com.pages.Bai17_Pages_LearnPOM.DashboardPage;
+import quangtester.com.pages.Bai17_Pages_LearnPOM.LoginPage;
 
 public class DashboardTest extends BaseTest {
     LoginPage loginPage;

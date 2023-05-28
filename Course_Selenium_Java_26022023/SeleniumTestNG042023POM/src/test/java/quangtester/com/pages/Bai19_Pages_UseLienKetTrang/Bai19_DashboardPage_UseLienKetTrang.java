@@ -1,13 +1,13 @@
-package quangtester.com.pages;
+package quangtester.com.pages.Bai19_Pages_UseLienKetTrang;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import quangtester.com.keywords.WebUI;
 
-public class DashboardPage {
+public class Bai19_DashboardPage_UseLienKetTrang {
     //Dùng private để đảm bảo tính đóng gói => Áp dụng tính đóng gói trong OOP
-    //Data nội bộ
+    //Các thuộc tính xác thực
     private String PAGE_URL = "https://crm.anhtester.com/admin/";
     private String PAGE_TEXT = "Dashboard Options";
 
@@ -25,7 +25,7 @@ public class DashboardPage {
     */
     //Hàm xây dựng
     private WebDriver driver;
-    public DashboardPage(WebDriver _driver) {
+    public Bai19_DashboardPage_UseLienKetTrang(WebDriver _driver) {
         driver = _driver;
     }
 
@@ -38,10 +38,12 @@ public class DashboardPage {
     }
 
     //Open tab menu Customers
-    public void openCustomerPage() {
+    public Bai19_CustomerPage_UseLienKetTrang openCustomerPage() {
         //Dùng Wait for Page loaded (Chờ đợi trang tải xong)
         WebUI.waitForPageLoaded(driver);
         driver.findElement(menuCustomer).click();
+
+        return new Bai19_CustomerPage_UseLienKetTrang(driver);
     }
 
 
@@ -62,5 +64,4 @@ public class DashboardPage {
         Assert.assertTrue(WebUI.verifyElementVisible(driver,widgetStatistics,5),"The Widget Statisttics default not visible"); ;
 
     }
-
 }

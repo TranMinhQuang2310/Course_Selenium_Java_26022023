@@ -3,8 +3,8 @@
 <suite name="Suite More Class" verbose="1">
     <test name="FirstTest01">
         <classes>
-            <class name="quangtester.com.testcases.DashboardTest" />
-            <class name="quangtester.com.testcases.LoginTest" />
+            <class name="quangtester.com.testcases.Bai17_Test_LearnPOM.DashboardTest" />
+            <class name="quangtester.com.testcases.Bai17_Test_LearnPOM.LoginTest" />
         </classes>
     </test>
 </suite>

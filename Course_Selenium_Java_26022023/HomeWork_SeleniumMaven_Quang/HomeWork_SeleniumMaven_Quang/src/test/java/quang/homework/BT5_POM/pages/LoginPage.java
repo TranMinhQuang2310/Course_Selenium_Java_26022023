@@ -7,7 +7,7 @@ import org.testng.Assert;
 
 public class LoginPage {
     //Dùng private để đảm bảo tính đóng gói => Áp dụng tính đóng gói trong OOP
-    //Data nội bộ
+    //Các thuộc tính xác thực
     private String URL = "https://cms.anhtester.com/login";
     private String HEADER_TEXT = "Welcome to Active eCommerce CMS";
 
@@ -68,7 +68,7 @@ public class LoginPage {
 
     //Hàm xử lý tổng hợp
         //1. Login
-    public void login(String email,String passeword) {
+    public DashboardPage login(String email, String passeword) {
         driver.get(URL);//Open URL
         verifyHeaderText();
         enterEmail(email);
@@ -76,6 +76,8 @@ public class LoginPage {
         clickRemember_me();
         verifyclickRemember_me();
         clickOnLoginButton();
+
+        return new DashboardPage(driver);
     }
 
 }

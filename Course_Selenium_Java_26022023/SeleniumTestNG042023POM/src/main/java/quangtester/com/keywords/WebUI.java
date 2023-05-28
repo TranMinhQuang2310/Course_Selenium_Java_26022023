@@ -22,6 +22,7 @@ public class WebUI {
 
     //Áp dụng cho Bài 15 : TestExplicitWait
     public static void waitForElementVisible(WebDriver driver,By by, int seconds_of_timeout) {
+        //Khởi tạo ExplicitWait để CHỜ tìm xem đối tượng có visible (vừa tồn tại trong DOM vừa tồn tại trên UI để người dùng thao tác)chưa
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(seconds_of_timeout));
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
