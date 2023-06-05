@@ -2,6 +2,10 @@ package quangtester.com.pages.Bai20_Pages_ThucHanh.Customer;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import quangtester.com.keywords.WebUI;
+
+//Gọi ra tất cả các hàm có trạng thái static trong class WebUI
+import static quangtester.com.keywords.WebUI.*;
 
 public class Bai20_CustomerDetailPage_ThucHanh extends Bai20_AddNewCustomerPage_ThucHanh {
 
@@ -18,18 +22,22 @@ public class Bai20_CustomerDetailPage_ThucHanh extends Bai20_AddNewCustomerPage_
         super(_driver);
         //Khởi tạo driver của thằng con (Bai20_CustomerDetailPage_ThucHanh)
         driver = _driver;
+        //Khởi tạo class WebUI để truyền giá trị driver từ bên ngoài vào WebUI
+        new WebUI(driver);//Đây là kiểu khởi tạo đối tượng Annonymous trong Java
     }
 
     //Check danh sách Customer Detail
     public void checkCustomerDetail(String customerName,String vatName) {
         //Lấy inputCompany từ hàm (Bai20_AddNewCustomerPage_ThucHanh)
-        String getCompanyNameInDetail = driver.findElement(inputCompany).getAttribute("value");
+        //String getCompanyNameInDetail = driver.findElement(inputCompany).getAttribute("value");
+        String getCompanyNameInDetail = getAttributeElement(inputCompany,"value");
         System.out.println("Name trong ô input của field Company sau khi Lưu là :" + getCompanyNameInDetail);
         //Kiểm tra xem name trong ô inputCompany sau khi Lưu có đúng với dữ liệu nhập vào không
         Assert.assertEquals(getCompanyNameInDetail,customerName,"Failed . Customer Name not match");
 
         //Lấy inputVat từ hàm (Bai20_AddNewCustomerPage_ThucHanh)
-        String getVatInDetail = driver.findElement(inputVat).getAttribute("value");
+        //String getVatInDetail = driver.findElement(inputVat).getAttribute("value");
+        String getVatInDetail = getAttributeElement(inputVat,"value");
         System.out.println("VAT trong ô input của field VAT sau khi Lưu là : " + getVatInDetail);
         //Kiểm tra xem name trong ô inputVAT sau khi Lưu có đúng với dữ liệu nhập vào không
         Assert.assertEquals(getVatInDetail,vatName,"Failed . VAT Name not match");

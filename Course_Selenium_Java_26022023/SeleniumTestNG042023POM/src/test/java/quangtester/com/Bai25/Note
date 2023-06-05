@@ -1,0 +1,27 @@
+1. Thử nghiệm song song là gì và Tại sao nó lại quan trọng?
+    - Thử nghiệm song song hoặc thực thi song song (Parallel Execution) là một quá trình khởi chạy trường hợp thử nghiệm
+     một cách song song chứ không phải chạy tuần tự từng test case. Trong thử nghiệm song song, nhiều phần ( hoặc mô-đun )
+     của chương trình thực thi cùng nhau, tiết kiệm rất nhiều thời gian và công sức cho người thử nghiệm.
+
+    - Các chức năng của hệ điều hành thực hiện điều này, nhưng với tư cách là người dùng, chúng ta cần kích hoạt thực thi
+    song song thông qua TestNG.
+
+2. Ưu điểm :
+    - Giảm thời gian: Chạy các bài kiểm tra song song làm giảm thời gian thực hiện tổng thể .
+    - Cho phép kiểm tra đa luồng: Sử dụng thực thi song song trong TestNG, chúng ta có thể cho phép nhiều luồng chạy đồng
+    thời trên trường hợp thử nghiệm, cung cấp sự độc lập trong việc thực thi các thành phần khác nhau của phần mềm.
+    Nghĩa là chúng ta chạy 2 module lớn trong hệ thống song song nhau nếu nó độc lập không liên quan ràng buộc nhau nhiều.
+
+
+3. Nhược điểm :
+    - Lỗi trên mô-đun phụ thuộc: Kiểm tra song song cho phép chạy đồng thời các mô-đun độc lập. Do đó, chúng ta không thể
+    tiếp tục với các mô-đun phụ thuộc vào nhau và điều này xảy ra khá thường xuyên trong khi thử nghiệm.
+    Vì vậy, chúng ta chạy nối tiếp hoặc tuần tự, điều này tốn thêm thời gian và công sức.
+    - Kiến thức về Luồng chương trình: Người thử nghiệm phải thông thạo luồng chương trình để tạo các mô-đun thử nghiệm song song.
+     Một chút phụ thuộc lẫn nhau có thể làm giảm toàn bộ quá trình thực thi trường hợp thử nghiệm.
+     Người kiểm tra cũng nên biết mô-đun nào sẽ chạy trong nhiều luồng và mô-đun nào chạy trong cùng một luồng, v.v.
+
+4.  Áp dụng thực thi Thử nghiệm song song trong TestNG ở những vị trí :
+    - Tests -> Chạy tuần tự class -> Chạy tuần tự @Test
+    - Classes -> Chạy song song các class -> Chạy tuần tự các @Test bên trong class đó
+    - Methods -> Chạy song song @Test(1 Tcs)

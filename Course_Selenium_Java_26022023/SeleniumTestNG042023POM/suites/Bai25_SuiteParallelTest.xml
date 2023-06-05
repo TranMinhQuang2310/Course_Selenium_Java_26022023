@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parallel Suite All" verbose="1">
+
+    <!--parallel (cấu hình chạy song song)-->
+    <!--methods (phương thức)-->
+
+    <test name="Regression Test Parallel" parallel="methods">
+        <classes>
+            <class name="quangtester.com.Bai25.ParallelTest" />
+        </classes>
+    </test>
+</suite>

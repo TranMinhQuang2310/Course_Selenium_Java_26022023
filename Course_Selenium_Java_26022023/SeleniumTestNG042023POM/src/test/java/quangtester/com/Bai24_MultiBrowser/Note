@@ -1,0 +1,25 @@
+1. Parameters trong TestNG :
+    - ĐN :
+        + Parameters(nghĩa là tham số)
+        + TestNG cho chúng ta một tính năng thú vị khác được gọi là TestNG Parameters. TestNG cho phép bạn chuyển các
+        thông số trực tiếp đến các phương pháp kiểm tra bằng testng.xml của bạn. (file Suite đấy)
+
+    - Cú pháp :
+         Syntax:
+         Parameters ({"paramName1", "paramName2", ...})
+
+    - Lưu ý :
+          + Số lượng tham số khai báo trong @Parameters như nào thì trong mỗi phương thức cần khai báo đủ y vậy.
+          + Tham số TestNG được chạy qua tệp XML TestNG (file Suite) chứ không phải trực tiếp từ tệp trường hợp thử nghiệm (class).
+
+    - Các trường hợp khai báo tham số trong XML TestNG :
+        1. Khai báo các tham số trong XML TestNG ở cấp độ Test
+            VD : (trong class TestParameters_CapDoTest)
+        2. Khai báo các tham số trong XML TestNG ở cấp độ Suite (ngoài hàm test)
+            VD : (trong class TestParameters_CapDoSuites)
+
+        3. @Optional trong TestNG
+            VD : (trong class TestParameters_CapDoTest)
+            => Kết luận : Nếu không truyền giá trị nào vào tham số đã khai báo trong hàm thì sẽ lấy giá trị mặc định của @Optional
+
+

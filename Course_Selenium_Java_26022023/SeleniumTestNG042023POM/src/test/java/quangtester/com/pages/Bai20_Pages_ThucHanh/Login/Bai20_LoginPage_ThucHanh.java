@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import quangtester.com.keywords.WebUI;
+//Gọi ra tất cả các hàm có trạng thái static trong class WebUI
+import static quangtester.com.keywords.WebUI.*;
 import quangtester.com.pages.Bai20_Pages_ThucHanh.Dashboard.Bai20_DashboardPage_ThucHanh;
 
 public class Bai20_LoginPage_ThucHanh {
@@ -27,27 +29,32 @@ public class Bai20_LoginPage_ThucHanh {
     private WebDriver driver;
     public Bai20_LoginPage_ThucHanh(WebDriver _driver) {
         driver = _driver;
+        //Khởi tạo class WebUI để truyền giá trị driver từ bên ngoài vào WebUI
+        new WebUI(driver);//Đây là kiểu khởi tạo đối tượng Annonymous trong Java
     }
 
     //Viết các hàm xử lý cho trang Login
     //1. Kiểm tra header page có phải tên "Login" không
     public void verifyHeaderPage() {
-        Assert.assertEquals(driver.findElement(headerPage).getText(),"Login","Failed . Name of Header Page not match");
+        Assert.assertEquals(getTextElement(headerPage),"Login","Failed . Name of Header Page not match");
     }
 
     //2.Điền email
     public void enterEmail(String email) {
-        driver.findElement(inputEmail).sendKeys(email);
+        //driver.findElement(inputEmail).sendKeys(email);
+        setText(inputEmail,email);
     }
 
     //3. Điền password
     public void enterPassword(String password) {
-        driver.findElement(inputPassword).sendKeys(password);
+        //driver.findElement(inputPassword).sendKeys(password);
+        setText(inputPassword,password);
     }
 
     //4. Click button Login
     public void clickOnLoginButton() {
-        driver.findElement(buttonLogin).click();
+        //driver.findElement(buttonLogin).click();
+        clickElement(buttonLogin);
     }
 
     /*
@@ -56,8 +63,8 @@ public class Bai20_LoginPage_ThucHanh {
             -   In ra đoạn text xem có Đúng với từ truyền vào không
     */
     public void verifyErrorMessageDisplay() {
-        Assert.assertTrue(driver.findElement(messageErrorEmail).isDisplayed(),"Failed . Error Message no display");
-        Assert.assertEquals(driver.findElement(messageErrorEmail).getText(),"Invalid email or password","Failed . Content of the Error massage not match");
+        Assert.assertTrue(checkIsDisplayed(messageErrorEmail),"Failed . Error Message no display");
+        Assert.assertEquals(getTextElement(messageErrorEmail),"Invalid email or password","Failed . Content of the Error massage not match");
     }
 
 
@@ -65,7 +72,7 @@ public class Bai20_LoginPage_ThucHanh {
     //Hàm xử lý tổng hợp để login
     public Bai20_DashboardPage_ThucHanh login(String email, String password) {
         //1. Open URL
-        driver.get(URL);
+        openURL(URL);
         verifyHeaderPage();
         enterEmail(email);
         enterPassword(password);
@@ -76,7 +83,7 @@ public class Bai20_LoginPage_ThucHanh {
 
     public void loginInvalidEmail(String email,String password) {
         //1. Open URL
-        driver.get(URL);
+        openURL(URL);
         verifyHeaderPage();
         enterEmail(email);
         enterPassword(password);

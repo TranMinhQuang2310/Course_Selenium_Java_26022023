@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
 import quangtester.com.keywords.WebUI;
 
+//Gọi ra tất cả các hàm có trạng thái static trong class WebUI
+import static quangtester.com.keywords.WebUI.*;
+
 import java.util.List;
 
 public class Bai18_LoginPage_UsePageFactory {
@@ -66,7 +69,7 @@ public class Bai18_LoginPage_UsePageFactory {
 
         public void clickOnMenuByName(String menuName) {
                 By menu = By.xpath("//span[normalize-space()='" + menuName + "']");
-                driver.findElement(menu).click();
+                clickElement(menu);
         }
 
         public void enterEmail(String email) {

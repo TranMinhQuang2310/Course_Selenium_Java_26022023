@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import quangtester.com.keywords.WebUI;
 
+//Gọi ra tất cả các hàm có trạng thái static trong class WebUI
+import static quangtester.com.keywords.WebUI.*;
+
 public class Bai19_CustomerPage_UseLienKetTrang {
     //Dùng private để đảm bảo tính đóng gói => Áp dụng tính đóng gói trong OOP
     //Các thuộc tính xác thực
@@ -18,16 +21,19 @@ public class Bai19_CustomerPage_UseLienKetTrang {
     private WebDriver driver;
     public Bai19_CustomerPage_UseLienKetTrang(WebDriver _driver) {
         driver = _driver;
+        //Khởi tạo class WebUI để truyền giá trị driver từ bên ngoài vào WebUI
+        new WebUI(driver);//Đây là kiểu khởi tạo đối tượng Annonymous trong Java
     }
 
     public void verifyCustomerPage() {
-        Assert.assertEquals(driver.getCurrentUrl(),PAGE_URL,"URL chưa đúng trang Customer");
-        Assert.assertTrue(WebUI.checkElementExist_UseBy(driver,headerPageCustomers),"Customer Header Page not existing");
-        Assert.assertEquals(driver.findElement(headerPageCustomers).getText(),"Customers Report","Customer Header Page is not match");
+        Assert.assertEquals(getCurrentURL(),PAGE_URL,"URL chưa đúng trang Customer");
+        Assert.assertTrue(WebUI.checkElementExist_UseBy(headerPageCustomers),"Customer Header Page not existing");
+        Assert.assertEquals(getTextElement(headerPageCustomers),"Customers Summary","Customer Header Page is not match");
     }
 
     public void ClickButton_add_Customer() {
-        driver.findElement(Button_Add_New_Customer).click();
+        //driver.findElement(Button_Add_New_Customer).click();
+        clickElement(Button_Add_New_Customer);
     }
 
     public void addCustomer() {

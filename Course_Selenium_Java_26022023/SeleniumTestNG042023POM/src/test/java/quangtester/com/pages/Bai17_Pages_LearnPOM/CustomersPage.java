@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import quangtester.com.keywords.WebUI;
+//Gọi ra tất cả các hàm có trạng thái static trong class WebUI
+import static quangtester.com.keywords.WebUI.*;
 
 public class CustomersPage {
     //Dùng private để đảm bảo tính đóng gói => Áp dụng tính đóng gói trong OOP
@@ -16,11 +18,13 @@ public class CustomersPage {
     private WebDriver driver;
     public CustomersPage(WebDriver _driver) {
         driver = _driver;
+        //Khởi tạo class WebUI để truyền giá trị driver từ bên ngoài vào WebUI
+        new WebUI(driver);//Đây là kiểu khởi tạo đối tượng Annonymous trong Java
     }
 
     public void verifyCustomerPage() {
-        Assert.assertEquals(driver.getCurrentUrl(),PAGE_URL,"URL chưa đúng trang Customer");
-        Assert.assertTrue(WebUI.checkElementExist_UseBy(driver,headerPageCustomers),"Customer Header Page not existing");
-        Assert.assertEquals(driver.findElement(headerPageCustomers).getText(),"Customers Summary","Customer Header Page is not match");
+        Assert.assertEquals(getCurrentURL(),PAGE_URL,"URL chưa đúng trang Customer");
+        Assert.assertTrue(WebUI.checkElementExist_UseBy(headerPageCustomers),"Customer Header Page not existing");
+        Assert.assertEquals(getTextElement(headerPageCustomers),"Customers Summary","Customer Header Page is not match");
     }
 }

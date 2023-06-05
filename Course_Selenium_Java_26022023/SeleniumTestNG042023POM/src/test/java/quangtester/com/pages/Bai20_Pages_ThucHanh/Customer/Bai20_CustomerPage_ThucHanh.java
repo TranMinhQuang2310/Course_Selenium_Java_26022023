@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import quangtester.com.keywords.WebUI;
 
+//Gọi ra tất cả các hàm có trạng thái static trong class WebUI
+import static quangtester.com.keywords.WebUI.*;
+
 public class Bai20_CustomerPage_ThucHanh {
     //Dùng private để đảm bảo tính đóng gói => Áp dụng tính đóng gói trong OOP
     //Các thuộc tính xác thực
@@ -28,44 +31,49 @@ public class Bai20_CustomerPage_ThucHanh {
 
     public Bai20_CustomerPage_ThucHanh(WebDriver _driver) {
         driver = _driver;
+        //Khởi tạo class WebUI để truyền giá trị driver từ bên ngoài vào WebUI
+        new WebUI(driver);//Đây là kiểu khởi tạo đối tượng Annonymous trong Java
     }
 
     //Các hàm xử lý cho chức năng thuộc Customer Page
     public void verifyCustomerPage() {
         //Kiểm tra url có đúng trang Customer chưa
-        Assert.assertEquals(driver.getCurrentUrl(),PAGE_URL,"URL chưa đúng trang Customer");
+        Assert.assertEquals(getCurrentURL(),PAGE_URL,"URL chưa đúng trang Customer");
         //Kiểm tra headerPage có tồn tại không
-        Assert.assertTrue(WebUI.checkElementExist_UseBy(driver,headerPageCustomers),"Customer Header Page not existing");
+        Assert.assertTrue(WebUI.checkElementExist_UseBy(headerPageCustomers),"Customer Header Page not existing");
         //Kiểm tra headerPage có giống giá trị truyền vào không
-        Assert.assertEquals(driver.findElement(headerPageCustomers).getText(),PAGE_TEXT , "Customer Header Page is not match");
+        Assert.assertEquals(getTextElement(headerPageCustomers),PAGE_TEXT , "Customer Header Page is not match");
     }
 
     public Bai20_AddNewCustomerPage_ThucHanh clickNewCustomerButton() {
         //Kiểm tra nút Add Customer có tồn tại
-        WebUI.waitForElementVisible(driver,buttonAddCustomer,10);
-        driver.findElement(buttonAddCustomer).click();
+        WebUI.waitForElementVisible(buttonAddCustomer,10);
+        //driver.findElement(buttonAddCustomer).click();
+        clickElement(buttonAddCustomer);
 
         return new Bai20_AddNewCustomerPage_ThucHanh(driver);
     }
 
     public void searchCustomer(String companyName) {
         //Chờ trang hiển thị
-        WebUI.waitForPageLoaded(driver);
+        WebUI.waitForPageLoaded();
         //Chờ nút search hiển thị
-        WebUI.waitForElementVisible(driver,inputSearch,10);
+        WebUI.waitForElementVisible(inputSearch,10);
         //Nhập dữ liệu vào ô search
-        driver.findElement(inputSearch).sendKeys(companyName);
-        WebUI.waitForPageLoaded(driver);
+        //driver.findElement(inputSearch).sendKeys(companyName);
+        setText(inputSearch,companyName);
+        WebUI.waitForPageLoaded();
         WebUI.sleep(2);
     }
 
     public Bai20_CustomerDetailPage_ThucHanh clickOnFirstRowCustomerName() {
         //Chờ trang hiển thị
-        WebUI.waitForPageLoaded(driver);
+        WebUI.waitForPageLoaded();
         //Chờ kết quả hiển thị sau khi tìm kiếm
-        WebUI.waitForElementVisible(driver,tdCustomerName,10);
+        WebUI.waitForElementVisible(tdCustomerName,10);
         //Nhấp vào kết quả
-        driver.findElement(tdCustomerName).click();
+        //driver.findElement(tdCustomerName).click();
+        clickElement(tdCustomerName);
 
         return new Bai20_CustomerDetailPage_ThucHanh(driver);
     }

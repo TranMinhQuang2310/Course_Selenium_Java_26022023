@@ -2,6 +2,8 @@ package quangtester.com.pages.Bai20_Pages_ThucHanh.Customer;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import quangtester.com.keywords.WebUI;
+
 
 public class Bai20_AddCustomerGroupDialog_ThucHanh {
 
@@ -18,6 +20,8 @@ public class Bai20_AddCustomerGroupDialog_ThucHanh {
     private WebDriver driver;
     public Bai20_AddCustomerGroupDialog_ThucHanh(WebDriver _driver) {
         driver = _driver;
+        //Khởi tạo class WebUI để truyền giá trị driver từ bên ngoài vào WebUI
+        new WebUI(driver);//Đây là kiểu khởi tạo đối tượng Annonymous trong Java
     }
 
 }
