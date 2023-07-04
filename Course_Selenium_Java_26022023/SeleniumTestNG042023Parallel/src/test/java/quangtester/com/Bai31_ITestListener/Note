@@ -1,0 +1,34 @@
+ITestListener trong TestNG
+
+I. Các phương pháp ITestListener
+1. onStart: Phương thức này gọi khi lớp thử nghiệm được khởi tạo và trước khi thực thi bất kỳ @Test
+    Cú pháp: void onStart (ITestContext context){...}
+
+2. onFinish: Phương thức này gọi khi tất cả các @Test đã chạy và việc gọi tất cả các phương thức cấu hình
+của chúng sẽ xảy ra.
+    Cú pháp: void onFinish (ITestContext context){...}
+
+3. onTestStart: Phương thức này gọi mỗi khi một @Test được gọi và thực thi.
+    Cú pháp: void onTestStart (ITestResult result){...}
+
+4. onTestSuccess: Phương thức này được gọi mỗi khi một ca kiểm thử vượt qua (thành công).
+    Cú pháp: void onTestSuccess (ITestResult result){...}
+
+5. onTestFailure: Phương thức này gọi mỗi khi một trường hợp thử nghiệm không thành công.
+    Cú pháp: void onTestFailure (ITestResult result){...}
+
+6. onTestSkipped: Phương thức này gọi mỗi khi thử nghiệm bỏ qua.
+    Cú pháp: void onTestSkipped (ITestResult result){...}
+
+7. onTestFailedButWithinSuccessPercentage: Phương thức này gọi khi @Test không thành công toàn bộ nhưng
+đã vượt qua một phần trăm thành công nhất định, được xác định bởi người dùng.
+    Cú pháp: void onTestFailedButSuccessPercentage (ITestResult result){...}
+
+
+
+
+II. Triển khai ITestListener trong TestNG
+    - Ở cấp độ Class: Chú thích Listeners  trên mỗi lớp trong testcase.
+    - Ở cấp độ Suite: Xác định tên lớp để triển khai trình Listener trong tệp XML TestNG.
+
+

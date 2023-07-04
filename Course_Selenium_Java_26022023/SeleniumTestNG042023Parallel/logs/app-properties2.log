@@ -1,0 +1,9 @@
+[INFO] 04-07-2023 22:27:36 [main] LogUtils - Running Test Case loginTestInvalidEmail
+[INFO] 04-07-2023 22:27:37 [main] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[INFO] 04-07-2023 22:27:37 [main] LogUtils - Get text of element By.xpath: //h1
+[INFO] 04-07-2023 22:27:37 [main] LogUtils - ===> Text :Login
+[INFO] 04-07-2023 22:27:37 [main] LogUtils - Set text admin@example.com123 on elementBy.xpath: //input[@id='email']
+[INFO] 04-07-2023 22:27:37 [main] LogUtils - Set text 123456 on elementBy.xpath: //input[@id='password']
+[INFO] 04-07-2023 22:27:40 [main] LogUtils - Click on element :By.xpath: //button[normalize-space()='Login']
+[INFO] 04-07-2023 22:27:40 [main] LogUtils - Get text of element By.xpath: //div[@class='text-center alert alert-danger']
+[INFO] 04-07-2023 22:27:40 [main] LogUtils - ===> Text :Invalid email or password

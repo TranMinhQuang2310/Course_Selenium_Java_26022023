@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- VD1 :  Chạy song song module thử nghiệm trong Suite XML TestNG (thẻ test trong XML)   -->
+<!--Đề bài : Chạy 2 browser cùng 1 lần-->
+
+<!--parallel (cấu hình chạy song song)-->
+<!--classes (lớp)-->
+
+<!--Chú ý : Để từ khoá parallel="tests" trên thẻ suite chứ không đặt dưới thẻ test nữa-->
+
+<suite name="Parallel Suite All" verbose="1" parallel="tests">
+
+    <test name="Regression Test Parallel 1" >
+        <classes>
+            <class name="quangtester.com.Bai25_Parallel.ParallelTest" />
+        </classes>
+    </test>
+
+    <test name="Regression Test Parallel 2" parallel="classes">
+        <classes>
+            <class name="quangtester.com.Bai25_Parallel.ChromeTest" />
+            <class name="quangtester.com.Bai25_Parallel.EdgeTest"></class>
+        </classes>
+    </test>
+</suite>

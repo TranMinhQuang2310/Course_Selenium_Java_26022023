@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite More Class" verbose="1">
+    <test name="FirstTest01">
+        <classes>
+            <class name="quangtester.com.testcases.Bai17_Test_LearnPOM.DashboardTest" />
+            <class name="quangtester.com.testcases.Bai17_Test_LearnPOM.LoginTest" />
+        </classes>
+    </test>
+</suite>

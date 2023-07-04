@@ -1,0 +1,2 @@
+1. Chỉ được chạy 1 trong 2 file là : log4j2.properties hoặc log4j2.xml (Ưu tiên chạy log4j2.properties)
+2. Phải đặt đúng tên là log4j2.properties hoặc log4j2.xml thì mới chạy

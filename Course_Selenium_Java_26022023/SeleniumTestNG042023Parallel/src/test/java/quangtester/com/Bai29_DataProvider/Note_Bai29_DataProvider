@@ -1,0 +1,11 @@
+DataProvider trong TestNG :
+VD :
+    {"First-Value","name1","email1",...},
+    {"Second-Value","name2","email2",...},
+    {"Third-Value","name3","email3",...},
+
+- Dòng dữ liệu : để trong dấu ngoặc nhọn {},{},...
+
+- Số lượng tham số trong 1 dòng dữ liệu : để trong dấu ngoặc nhọn và cách nhau dấu phẩy {1,2,3}
+
+- Data nên truyền bên testcase, hạn chế truyền vào pages

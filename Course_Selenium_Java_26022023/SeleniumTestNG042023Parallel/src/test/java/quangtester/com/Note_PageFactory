@@ -1,0 +1,52 @@
+I. Giới thiệu Page Factory :
+    - Page Factory là phần mở rộng của Page Object Model, nó giúp khởi tạo các đối tượng WebElement tối ưu hơn và giảm thiểu
+    code ngắn gọn hơn.
+
+II. Có hai bước đơn giản để sử dụng Page Factory trong các dự án Selenium:
+
+
+    1. Sử dụng chú thích @FindBy :
+        - @FindBy có thể chấp nhận tagName, partialLinkText, name, linkText, id, css, className, xpath dưới dạng thuộc tính.
+        - @FindBy(xpath = "...") nghĩa là : tìm 1 element cùng một giá trị locator
+            VD :
+                @FindBy(id="userName")
+                WebElement username;
+
+        - @FindBys(xpath = "...") nghĩa là : tìm nhiều element cùng một giá trị locator
+            VD :
+                @FindBys(@FindBy(css="div[class='yt-lockup-tile yt-lockup-video']")))
+                private List<WebElement> videoElements;
+
+    2. Nhắc lại bài cũ :
+        - Trước đây :
+            private List<WebElement> menu = driver.findElements(); =>  tìm nhiều element cùng một giá trị locator
+
+        - Bây giờ :
+            private List<WebElement> menu;
+
+
+
+    2 . Khởi tạo các phần tử bằng initElements () :
+        - ĐN :
+            + Khởi tạo các phần tử web mà chúng định vị bằng cách sử dụng @FindBy trên hoặc (các) chú thích khác
+            + Đặt nó vào chổ hàm xây dựng khởi tạo lớp trang.
+                VD :
+                    PageFactory.initElements(driver, this);
+
+    3. @CacheLookUp
+        - ĐN :
+            + Chạy qua 1 vòng => Lưu lại lần tìm trước đó => Lần sau tìm sẽ nhanh hơn
+                VD :
+                    @FindBy(id = "email")
+                    @CacheLookup
+                    private WebElement emailInput;
+
+
+    4. @FindAll
+        - ĐN :
+            + @FindAll với nhiều chú thích @FindBy để tìm kiếm các phần tử khớp với bất kỳ bộ định vị nào đã cho (điệu kiện HOẶC):
+
+    5. LÝ DO TẠI SAO KHÔNG DÙNG PAGE FACTORY
+        - Khó mang đối tượng WebElement vào các hàm Waits của Selenium
+        - Khó truyền giá trị Locator vào các method tùy biến
+

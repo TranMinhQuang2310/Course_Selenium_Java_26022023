@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parallel Suite All" verbose="1">
+
+    <!-- VD1 :  Chạy song song các lớp kiểm tra trong TestNG (Class)    -->
+    <!--Đề bài : Chạy 2 browser cùng 1 lần-->
+
+    <!--parallel (cấu hình chạy song song)-->
+    <!--classes (lớp)-->
+
+    <test name="Regression Test Parallel" parallel="classes">
+        <classes>
+            <class name="quangtester.com.testcases.Bai25_Parallel.ChromeTest" />
+            <class name="quangtester.com.testcases.Bai25_Parallel.EdgeTest"></class>
+        </classes>
+    </test>
+</suite>

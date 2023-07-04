@@ -1,0 +1,8 @@
+I. Sơ lược về Page Object - POM
+    - OOP (Object-Oriented Programming) nhìn tất cả mọi vật là Object – đối tượng. Đối tượng được định nghĩa trong các class
+    có các thuộc tính và các hành động khác nhau.
+    - POM (Page Object Model) là 1 design pattern (mẫu thiết kế) giúp mô hình hóa các pages, hoặc các phần (component: header, footer, menu…)
+    trong page của trang web thành mỗi đối tượng riêng biệt. Mỗi component / page sẽ gói gọn tất cả các hành động và các thuộc tính của component / page đó.
+            + Page : trang (trang web,trang login,...)
+            + Object : từng page sẽ có từng object
+            + Model : xử lý trên trang

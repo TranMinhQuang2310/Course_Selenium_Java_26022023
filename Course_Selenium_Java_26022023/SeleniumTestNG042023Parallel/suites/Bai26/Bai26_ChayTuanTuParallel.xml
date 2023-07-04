@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--Chạy tuần tự -->
+<!--thread-count="2" => Số luồng chạy (giam thời gian chạy test khi chạy quá nhiều case)-->
+
+<suite name="Suite Login Test" verbose="1">
+    <test name="Login Test on edge" parallel="methods" thread-count="2">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="quangtester.com.testcases.Bai26_DesignParallel.Bai26_LoginTest" />
+        </classes>
+    </test>
+
+    <test name="Login Test on chrome" parallel="methods">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="quangtester.com.testcases.Bai26_DesignParallel.Bai26_LoginTest" />
+        </classes>
+    </test>
+</suite>

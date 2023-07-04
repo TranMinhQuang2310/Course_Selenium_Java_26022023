@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="Suite Test MultiBrowser" verbose="1">
+    <test name="Test MultiBrowser">
+        <!--name : Lấy từ hàm createDriver trong class : Bai24_MultiBrowser_BaseTest-->
+        <!--value : Lấy từ hàm setupDriver trong class : Bai24_MultiBrowser_BaseTest-->
+
+        <parameter name="browser" value="edge"></parameter>
+
+        <classes>
+            <class name="quangtester.com.testcases.Bai24_MultiBrowser.Bai24_TestMultiBrowser" />
+        </classes>
+    </test>
+
+</suite>
+
+

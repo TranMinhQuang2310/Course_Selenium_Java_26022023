@@ -1,0 +1,60 @@
+[INFO ] 05-07-2023 00:38:42 [main] LogUtils - Loaded all properties file. 
+[INFO ] 05-07-2023 00:38:42 [main] LogUtils - Loaded all properties file. 
+[INFO ] 05-07-2023 00:38:44 [TestNG-test=Login Test on Chrome-2] LogUtils - Loaded all properties file. 
+[INFO ] 05-07-2023 00:38:44 [TestNG-test=Login Test on Chrome-2] LogUtils - Running Test Case :loginTestInvalidEmail
+[INFO ] 05-07-2023 00:38:44 [TestNG-test=Login Test on Chrome-2] LogUtils - Running Test Case :loginTestInvalidEmail
+[INFO ] 05-07-2023 00:38:44 [TestNG-test=Login Test on Chrome-1] LogUtils - Loaded all properties file. 
+[INFO ] 05-07-2023 00:38:44 [TestNG-test=Login Test on Chrome-1] LogUtils - Running Test Case :loginTestSuccess
+[INFO ] 05-07-2023 00:38:44 [TestNG-test=Login Test on Chrome-1] LogUtils - Running Test Case :loginTestSuccess
+[INFO ] 05-07-2023 00:38:44 [TestNG-test=Login Test on Chrome-2] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[INFO ] 05-07-2023 00:38:44 [TestNG-test=Login Test on Chrome-1] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[INFO ] 05-07-2023 00:38:44 [TestNG-test=Login Test on Chrome-1] LogUtils - Get text of element By.xpath: //h1
+[INFO ] 05-07-2023 00:38:44 [TestNG-test=Login Test on Chrome-2] LogUtils - Get text of element By.xpath: //h1
+[INFO ] 05-07-2023 00:38:44 [TestNG-test=Login Test on Chrome-1] LogUtils - ===> Text :Login
+[INFO ] 05-07-2023 00:38:44 [TestNG-test=Login Test on Chrome-2] LogUtils - ===> Text :Login
+[INFO ] 05-07-2023 00:38:45 [TestNG-test=Login Test on Chrome-1] LogUtils - Set text admin@example.com on elementBy.xpath: //input[@id='email']
+[INFO ] 05-07-2023 00:38:45 [TestNG-test=Login Test on Chrome-2] LogUtils - Set text admin@example.com12345 on elementBy.xpath: //input[@id='email']
+[INFO ] 05-07-2023 00:38:45 [TestNG-test=Login Test on Chrome-1] LogUtils - Set text 123456 on elementBy.xpath: //input[@id='password']
+[INFO ] 05-07-2023 00:38:45 [TestNG-test=Login Test on Chrome-2] LogUtils - Set text 123456 on elementBy.xpath: //input[@id='password']
+[INFO ] 05-07-2023 00:38:47 [TestNG-test=Login Test on Chrome-1] LogUtils - Click on element :By.xpath: //button[normalize-space()='Login']
+[INFO ] 05-07-2023 00:38:47 [TestNG-test=Login Test on Chrome-1] LogUtils - Đây là test case  loginTestSuccess chạy thành công
+[INFO ] 05-07-2023 00:38:47 [TestNG-test=Login Test on Chrome-1] LogUtils - Đây là test case  loginTestSuccess chạy thành công
+[INFO ] 05-07-2023 00:38:48 [TestNG-test=Login Test on Chrome-2] LogUtils - Click on element :By.xpath: //button[normalize-space()='Login']
+[INFO ] 05-07-2023 00:38:48 [TestNG-test=Login Test on Chrome-2] LogUtils - Element is Displayed  :true
+[INFO ] 05-07-2023 00:38:48 [TestNG-test=Login Test on Chrome-2] LogUtils - Get text of element By.xpath: //div[@class='text-center alert alert-danger']
+[INFO ] 05-07-2023 00:38:48 [TestNG-test=Login Test on Chrome-2] LogUtils - ===> Text :Invalid email or password
+[ERROR] 05-07-2023 00:38:48 [TestNG-test=Login Test on Chrome-2] LogUtils - Đây là test case loginTestInvalidEmail thất bại
+[ERROR] 05-07-2023 00:38:48 [TestNG-test=Login Test on Chrome-2] LogUtils - Chi tiết lỗi :java.lang.AssertionError: Failed . Content of the Error massage not match expected [Invalid email or password 123] but found [Invalid email or password]
+[ERROR] 05-07-2023 00:38:48 [TestNG-test=Login Test on Chrome-2] LogUtils - Đây là test case loginTestInvalidEmail thất bại
+[ERROR] 05-07-2023 00:38:48 [TestNG-test=Login Test on Chrome-2] LogUtils - Chi tiết lỗi :java.lang.AssertionError: Failed . Content of the Error massage not match expected [Invalid email or password 123] but found [Invalid email or password]
+[INFO ] 05-07-2023 00:38:49 [main] LogUtils - Kết thúc test :Login Test on Chrome
+[INFO ] 05-07-2023 00:47:44 [main] LogUtils - Loaded all properties file. 
+[INFO ] 05-07-2023 00:47:44 [main] LogUtils - Loaded all properties file. 
+[INFO ] 05-07-2023 00:47:46 [TestNG-test=Login Test on Chrome-1] LogUtils - Loaded all properties file. 
+[INFO ] 05-07-2023 00:47:46 [TestNG-test=Login Test on Chrome-1] LogUtils - Running Test Case :loginTestSuccess
+[INFO ] 05-07-2023 00:47:46 [TestNG-test=Login Test on Chrome-1] LogUtils - Running Test Case :loginTestSuccess
+[INFO ] 05-07-2023 00:47:46 [TestNG-test=Login Test on Chrome-2] LogUtils - Loaded all properties file. 
+[INFO ] 05-07-2023 00:47:46 [TestNG-test=Login Test on Chrome-2] LogUtils - Running Test Case :loginTestInvalidEmail
+[INFO ] 05-07-2023 00:47:46 [TestNG-test=Login Test on Chrome-2] LogUtils - Running Test Case :loginTestInvalidEmail
+[INFO ] 05-07-2023 00:47:46 [TestNG-test=Login Test on Chrome-1] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[INFO ] 05-07-2023 00:47:46 [TestNG-test=Login Test on Chrome-2] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[INFO ] 05-07-2023 00:47:46 [TestNG-test=Login Test on Chrome-2] LogUtils - Get text of element By.xpath: //h1
+[INFO ] 05-07-2023 00:47:46 [TestNG-test=Login Test on Chrome-1] LogUtils - Get text of element By.xpath: //h1
+[INFO ] 05-07-2023 00:47:46 [TestNG-test=Login Test on Chrome-1] LogUtils - ===> Text :Login
+[INFO ] 05-07-2023 00:47:46 [TestNG-test=Login Test on Chrome-2] LogUtils - ===> Text :Login
+[INFO ] 05-07-2023 00:47:47 [TestNG-test=Login Test on Chrome-2] LogUtils - Set text admin@example.com12345 on elementBy.xpath: //input[@id='email']
+[INFO ] 05-07-2023 00:47:47 [TestNG-test=Login Test on Chrome-1] LogUtils - Set text admin@example.com on elementBy.xpath: //input[@id='email']
+[INFO ] 05-07-2023 00:47:47 [TestNG-test=Login Test on Chrome-2] LogUtils - Set text 123456 on elementBy.xpath: //input[@id='password']
+[INFO ] 05-07-2023 00:47:47 [TestNG-test=Login Test on Chrome-1] LogUtils - Set text 123456 on elementBy.xpath: //input[@id='password']
+[INFO ] 05-07-2023 00:47:49 [TestNG-test=Login Test on Chrome-1] LogUtils - Click on element :By.xpath: //button[normalize-space()='Login']
+[INFO ] 05-07-2023 00:47:49 [TestNG-test=Login Test on Chrome-1] LogUtils - Đây là test case  loginTestSuccess chạy thành công
+[INFO ] 05-07-2023 00:47:49 [TestNG-test=Login Test on Chrome-1] LogUtils - Đây là test case  loginTestSuccess chạy thành công
+[INFO ] 05-07-2023 00:47:50 [TestNG-test=Login Test on Chrome-2] LogUtils - Click on element :By.xpath: //button[normalize-space()='Login']
+[INFO ] 05-07-2023 00:47:50 [TestNG-test=Login Test on Chrome-2] LogUtils - Element is Displayed  :true
+[INFO ] 05-07-2023 00:47:50 [TestNG-test=Login Test on Chrome-2] LogUtils - Get text of element By.xpath: //div[@class='text-center alert alert-danger']
+[INFO ] 05-07-2023 00:47:50 [TestNG-test=Login Test on Chrome-2] LogUtils - ===> Text :Invalid email or password
+[ERROR] 05-07-2023 00:47:50 [TestNG-test=Login Test on Chrome-2] LogUtils - Đây là test case loginTestInvalidEmail thất bại
+[ERROR] 05-07-2023 00:47:50 [TestNG-test=Login Test on Chrome-2] LogUtils - Chi tiết lỗi :java.lang.AssertionError: Failed . Content of the Error massage not match expected [Invalid email or password 123] but found [Invalid email or password]
+[ERROR] 05-07-2023 00:47:50 [TestNG-test=Login Test on Chrome-2] LogUtils - Đây là test case loginTestInvalidEmail thất bại
+[ERROR] 05-07-2023 00:47:50 [TestNG-test=Login Test on Chrome-2] LogUtils - Chi tiết lỗi :java.lang.AssertionError: Failed . Content of the Error massage not match expected [Invalid email or password 123] but found [Invalid email or password]
+[INFO ] 05-07-2023 00:47:51 [main] LogUtils - Kết thúc test :Login Test on Chrome
