@@ -58,3 +58,348 @@
 [ERROR] 05-07-2023 00:47:50 [TestNG-test=Login Test on Chrome-2] LogUtils - Đây là test case loginTestInvalidEmail thất bại
 [ERROR] 05-07-2023 00:47:50 [TestNG-test=Login Test on Chrome-2] LogUtils - Chi tiết lỗi :java.lang.AssertionError: Failed . Content of the Error massage not match expected [Invalid email or password 123] but found [Invalid email or password]
 [INFO ] 05-07-2023 00:47:51 [main] LogUtils - Kết thúc test :Login Test on Chrome
+[INFO ] 05-07-2023 01:01:21 [main] LogUtils - Loaded all properties file. 
+[INFO ] 05-07-2023 01:01:21 [main] LogUtils - Loaded all properties file. 
+[INFO ] 05-07-2023 01:01:23 [TestNG-test=Login Test on Chrome-1] LogUtils - Loaded all properties file. 
+[INFO ] 05-07-2023 01:01:23 [TestNG-test=Login Test on Chrome-2] LogUtils - Loaded all properties file. 
+[INFO ] 05-07-2023 01:01:23 [TestNG-test=Login Test on Chrome-1] LogUtils - Running Test Case :loginTestSuccess
+[INFO ] 05-07-2023 01:01:23 [TestNG-test=Login Test on Chrome-2] LogUtils - Running Test Case :loginTestInvalidEmail
+[INFO ] 05-07-2023 01:01:23 [TestNG-test=Login Test on Chrome-2] LogUtils - Running Test Case :loginTestInvalidEmail
+[INFO ] 05-07-2023 01:01:23 [TestNG-test=Login Test on Chrome-1] LogUtils - Running Test Case :loginTestSuccess
+[INFO ] 05-07-2023 01:01:24 [TestNG-test=Login Test on Chrome-2] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[INFO ] 05-07-2023 01:01:24 [TestNG-test=Login Test on Chrome-1] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[INFO ] 05-07-2023 01:01:24 [TestNG-test=Login Test on Chrome-2] LogUtils - Get text of element By.xpath: //h1
+[INFO ] 05-07-2023 01:01:24 [TestNG-test=Login Test on Chrome-2] LogUtils - ===> Text :Login
+[INFO ] 05-07-2023 01:01:24 [TestNG-test=Login Test on Chrome-1] LogUtils - Get text of element By.xpath: //h1
+[INFO ] 05-07-2023 01:01:24 [TestNG-test=Login Test on Chrome-1] LogUtils - ===> Text :Login
+[INFO ] 05-07-2023 01:01:24 [TestNG-test=Login Test on Chrome-2] LogUtils - Set text admin@example.com12345 on elementBy.xpath: //input[@id='email']
+[INFO ] 05-07-2023 01:01:24 [TestNG-test=Login Test on Chrome-1] LogUtils - Set text admin@example.com on elementBy.xpath: //input[@id='email']
+[INFO ] 05-07-2023 01:01:24 [TestNG-test=Login Test on Chrome-2] LogUtils - Set text 123456 on elementBy.xpath: //input[@id='password']
+[INFO ] 05-07-2023 01:01:24 [TestNG-test=Login Test on Chrome-1] LogUtils - Set text 123456 on elementBy.xpath: //input[@id='password']
+[INFO ] 05-07-2023 01:01:26 [TestNG-test=Login Test on Chrome-1] LogUtils - Click on element :By.xpath: //button[normalize-space()='Login']
+[INFO ] 05-07-2023 01:01:26 [TestNG-test=Login Test on Chrome-1] LogUtils - Đây là test case  loginTestSuccess chạy thành công
+[INFO ] 05-07-2023 01:01:26 [TestNG-test=Login Test on Chrome-1] LogUtils - Đây là test case  loginTestSuccess chạy thành công
+[INFO ] 05-07-2023 01:01:27 [TestNG-test=Login Test on Chrome-2] LogUtils - Click on element :By.xpath: //button[normalize-space()='Login']
+[INFO ] 05-07-2023 01:01:27 [TestNG-test=Login Test on Chrome-2] LogUtils - Element is Displayed  :true
+[INFO ] 05-07-2023 01:01:27 [TestNG-test=Login Test on Chrome-2] LogUtils - Get text of element By.xpath: //div[@class='text-center alert alert-danger']
+[INFO ] 05-07-2023 01:01:27 [TestNG-test=Login Test on Chrome-2] LogUtils - ===> Text :Invalid email or password
+[ERROR] 05-07-2023 01:01:27 [TestNG-test=Login Test on Chrome-2] LogUtils - Đây là test case loginTestInvalidEmail thất bại
+[ERROR] 05-07-2023 01:01:28 [TestNG-test=Login Test on Chrome-2] LogUtils - Chi tiết lỗi :java.lang.AssertionError: Failed . Content of the Error massage not match expected [Invalid email or password 123] but found [Invalid email or password]
+[ERROR] 05-07-2023 01:01:28 [TestNG-test=Login Test on Chrome-2] LogUtils - Đây là test case loginTestInvalidEmail thất bại
+[ERROR] 05-07-2023 01:01:28 [TestNG-test=Login Test on Chrome-2] LogUtils - Chi tiết lỗi :java.lang.AssertionError: Failed . Content of the Error massage not match expected [Invalid email or password 123] but found [Invalid email or password]
+[INFO ] 05-07-2023 01:01:28 [main] LogUtils - Kết thúc test :Login Test on Chrome
+[INFO ] 06-07-2023 22:26:12 [main] LogUtils - Loaded all properties file. 
+[INFO ] 06-07-2023 22:26:20 [main] LogUtils - Running Test Case :testFilterWidgetsOnDashboard
+[INFO ] 06-07-2023 22:26:20 [main] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[ERROR] 06-07-2023 22:26:21 [main] LogUtils - Đây là test case testFilterWidgetsOnDashboard thất bại
+[ERROR] 06-07-2023 22:26:21 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 06-07-2023 22:26:23 [main] LogUtils - Running Test Case :testOpenMenuOnDashboard
+[INFO ] 06-07-2023 22:26:23 [main] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[ERROR] 06-07-2023 22:26:23 [main] LogUtils - Đây là test case testOpenMenuOnDashboard thất bại
+[ERROR] 06-07-2023 22:26:23 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 06-07-2023 22:26:25 [main] LogUtils - Running Test Case :loginTestInvalidEmail
+[INFO ] 06-07-2023 22:26:25 [main] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[ERROR] 06-07-2023 22:26:25 [main] LogUtils - Đây là test case loginTestInvalidEmail thất bại
+[ERROR] 06-07-2023 22:26:25 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 06-07-2023 22:26:27 [main] LogUtils - Running Test Case :loginTestSuccess
+[INFO ] 06-07-2023 22:26:28 [main] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[ERROR] 06-07-2023 22:26:28 [main] LogUtils - Đây là test case loginTestSuccess thất bại
+[ERROR] 06-07-2023 22:26:28 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 06-07-2023 22:27:13 [main] LogUtils - Loaded all properties file. 
+[INFO ] 06-07-2023 22:27:13 [main] LogUtils - Loaded all properties file. 
+[INFO ] 06-07-2023 22:27:15 [TestNG-test=Login Test on Chrome-1] LogUtils - Loaded all properties file. 
+[INFO ] 06-07-2023 22:27:15 [TestNG-test=Login Test on Chrome-2] LogUtils - Loaded all properties file. 
+[INFO ] 06-07-2023 22:27:15 [TestNG-test=Login Test on Chrome-2] LogUtils - Running Test Case :loginTestInvalidEmail
+[INFO ] 06-07-2023 22:27:15 [TestNG-test=Login Test on Chrome-1] LogUtils - Running Test Case :loginTestSuccess
+[INFO ] 06-07-2023 22:27:15 [TestNG-test=Login Test on Chrome-2] LogUtils - Running Test Case :loginTestInvalidEmail
+[INFO ] 06-07-2023 22:27:15 [TestNG-test=Login Test on Chrome-1] LogUtils - Running Test Case :loginTestSuccess
+[INFO ] 06-07-2023 22:27:16 [TestNG-test=Login Test on Chrome-1] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[INFO ] 06-07-2023 22:27:16 [TestNG-test=Login Test on Chrome-1] LogUtils - Get text of element By.xpath: //h1
+[INFO ] 06-07-2023 22:27:16 [TestNG-test=Login Test on Chrome-1] LogUtils - ===> Text :Login
+[INFO ] 06-07-2023 22:27:16 [TestNG-test=Login Test on Chrome-1] LogUtils - Set text admin@example.com on elementBy.xpath: //input[@id='email']
+[INFO ] 06-07-2023 22:27:16 [TestNG-test=Login Test on Chrome-1] LogUtils - Set text 123456 on elementBy.xpath: //input[@id='password']
+[INFO ] 06-07-2023 22:27:17 [TestNG-test=Login Test on Chrome-2] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[INFO ] 06-07-2023 22:27:17 [TestNG-test=Login Test on Chrome-2] LogUtils - Get text of element By.xpath: //h1
+[INFO ] 06-07-2023 22:27:17 [TestNG-test=Login Test on Chrome-2] LogUtils - ===> Text :Login
+[INFO ] 06-07-2023 22:27:17 [TestNG-test=Login Test on Chrome-2] LogUtils - Set text admin@example.com12345 on elementBy.xpath: //input[@id='email']
+[INFO ] 06-07-2023 22:27:17 [TestNG-test=Login Test on Chrome-2] LogUtils - Set text 123456 on elementBy.xpath: //input[@id='password']
+[INFO ] 06-07-2023 22:27:19 [TestNG-test=Login Test on Chrome-1] LogUtils - Click on element :By.xpath: //button[normalize-space()='Login']
+[INFO ] 06-07-2023 22:27:19 [TestNG-test=Login Test on Chrome-1] LogUtils - Đây là test case  loginTestSuccess chạy thành công
+[INFO ] 06-07-2023 22:27:19 [TestNG-test=Login Test on Chrome-1] LogUtils - Đây là test case  loginTestSuccess chạy thành công
+[INFO ] 06-07-2023 22:27:20 [TestNG-test=Login Test on Chrome-2] LogUtils - Click on element :By.xpath: //button[normalize-space()='Login']
+[INFO ] 06-07-2023 22:27:20 [TestNG-test=Login Test on Chrome-2] LogUtils - Element is Displayed  :true
+[INFO ] 06-07-2023 22:27:21 [TestNG-test=Login Test on Chrome-2] LogUtils - Get text of element By.xpath: //div[@class='text-center alert alert-danger']
+[INFO ] 06-07-2023 22:27:21 [TestNG-test=Login Test on Chrome-2] LogUtils - ===> Text :Invalid email or password
+[ERROR] 06-07-2023 22:27:21 [TestNG-test=Login Test on Chrome-2] LogUtils - Đây là test case loginTestInvalidEmail thất bại
+[ERROR] 06-07-2023 22:27:21 [TestNG-test=Login Test on Chrome-2] LogUtils - Chi tiết lỗi :java.lang.AssertionError: Failed . Content of the Error massage not match expected [Invalid email or password 123] but found [Invalid email or password]
+[ERROR] 06-07-2023 22:27:21 [TestNG-test=Login Test on Chrome-2] LogUtils - Đây là test case loginTestInvalidEmail thất bại
+[ERROR] 06-07-2023 22:27:21 [TestNG-test=Login Test on Chrome-2] LogUtils - Chi tiết lỗi :java.lang.AssertionError: Failed . Content of the Error massage not match expected [Invalid email or password 123] but found [Invalid email or password]
+[INFO ] 06-07-2023 22:27:22 [main] LogUtils - Kết thúc test :Login Test on Chrome
+[INFO ] 06-07-2023 23:15:20 [main] LogUtils - Loaded all properties file. 
+[INFO ] 06-07-2023 23:15:20 [main] LogUtils - Loaded all properties file. 
+[INFO ] 06-07-2023 23:15:23 [TestNG-test=Login Test on Chrome-2] LogUtils - Loaded all properties file. 
+[INFO ] 06-07-2023 23:15:23 [TestNG-test=Login Test on Chrome-1] LogUtils - Loaded all properties file. 
+[INFO ] 06-07-2023 23:15:23 [TestNG-test=Login Test on Chrome-1] LogUtils - Running Test Case :loginTestSuccess
+[INFO ] 06-07-2023 23:15:23 [TestNG-test=Login Test on Chrome-2] LogUtils - Running Test Case :loginTestInvalidEmail
+[INFO ] 06-07-2023 23:15:23 [TestNG-test=Login Test on Chrome-2] LogUtils - Running Test Case :loginTestInvalidEmail
+[INFO ] 06-07-2023 23:15:23 [TestNG-test=Login Test on Chrome-1] LogUtils - Running Test Case :loginTestSuccess
+[INFO ] 06-07-2023 23:15:24 [TestNG-test=Login Test on Chrome-2] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[INFO ] 06-07-2023 23:15:24 [TestNG-test=Login Test on Chrome-2] LogUtils - Get text of element By.xpath: //h1
+[INFO ] 06-07-2023 23:15:24 [TestNG-test=Login Test on Chrome-2] LogUtils - ===> Text :Login
+[INFO ] 06-07-2023 23:15:24 [TestNG-test=Login Test on Chrome-2] LogUtils - Set text admin@example.com12345 on elementBy.xpath: //input[@id='email']
+[INFO ] 06-07-2023 23:15:25 [TestNG-test=Login Test on Chrome-2] LogUtils - Set text 123456 on elementBy.xpath: //input[@id='password']
+[INFO ] 06-07-2023 23:15:25 [TestNG-test=Login Test on Chrome-1] LogUtils - Open URL :https://crm.anhtester.com/admin/authentication
+[INFO ] 06-07-2023 23:15:25 [TestNG-test=Login Test on Chrome-1] LogUtils - Get text of element By.xpath: //h1
+[INFO ] 06-07-2023 23:15:25 [TestNG-test=Login Test on Chrome-1] LogUtils - ===> Text :Login
+[INFO ] 06-07-2023 23:15:25 [TestNG-test=Login Test on Chrome-1] LogUtils - Set text admin@example.com on elementBy.xpath: //input[@id='email']
+[INFO ] 06-07-2023 23:15:25 [TestNG-test=Login Test on Chrome-1] LogUtils - Set text 123456 on elementBy.xpath: //input[@id='password']
+[INFO ] 06-07-2023 23:15:27 [TestNG-test=Login Test on Chrome-1] LogUtils - Click on element :By.xpath: //button[normalize-space()='Login']
+[INFO ] 06-07-2023 23:15:27 [TestNG-test=Login Test on Chrome-1] LogUtils - Đây là test case  loginTestSuccess chạy thành công
+[INFO ] 06-07-2023 23:15:27 [TestNG-test=Login Test on Chrome-1] LogUtils - Đây là test case  loginTestSuccess chạy thành công
+[INFO ] 06-07-2023 23:15:28 [TestNG-test=Login Test on Chrome-2] LogUtils - Click on element :By.xpath: //button[normalize-space()='Login']
+[INFO ] 06-07-2023 23:15:28 [TestNG-test=Login Test on Chrome-2] LogUtils - Element is Displayed  :true
+[INFO ] 06-07-2023 23:15:28 [TestNG-test=Login Test on Chrome-2] LogUtils - Get text of element By.xpath: //div[@class='text-center alert alert-danger']
+[INFO ] 06-07-2023 23:15:28 [TestNG-test=Login Test on Chrome-2] LogUtils - ===> Text :Invalid email or password
+[ERROR] 06-07-2023 23:15:28 [TestNG-test=Login Test on Chrome-2] LogUtils - Đây là test case loginTestInvalidEmail thất bại
+[ERROR] 06-07-2023 23:15:28 [TestNG-test=Login Test on Chrome-2] LogUtils - Chi tiết lỗi :java.lang.AssertionError: Failed . Content of the Error massage not match expected [Invalid email or password 123] but found [Invalid email or password]
+[ERROR] 06-07-2023 23:15:28 [TestNG-test=Login Test on Chrome-2] LogUtils - Đây là test case loginTestInvalidEmail thất bại
+[ERROR] 06-07-2023 23:15:28 [TestNG-test=Login Test on Chrome-2] LogUtils - Chi tiết lỗi :java.lang.AssertionError: Failed . Content of the Error massage not match expected [Invalid email or password 123] but found [Invalid email or password]
+[INFO ] 06-07-2023 23:15:29 [main] LogUtils - Kết thúc test :Login Test on Chrome
+[INFO ] 08-07-2023 18:05:30 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:05:36 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:05:36 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[ERROR] 08-07-2023 18:05:39 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:05:39 [main] LogUtils - Chi tiết lỗi :org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:\HocTester-AnhTester-Course\SeleniumJava\Course_Selenium_Java_26022023\SeleniumTestNG042023Parallel/datatest/Selenium4_Upload.png
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ff52f656cb1db4a99b81a02c9c5443f, sendKeysToElement {id=18FECA6D10EAAB6BEEA1576B90D784C0_element_2, value=[Ljava.lang.CharSequence;@2b625e82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, goog:chromeOptions: {debuggerAddress: localhost:53678}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53678/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4ff52f656cb1db4a99b81a02c9c5443f)] -> xpath: //input[@type='file']]
+Session ID: 4ff52f656cb1db4a99b81a02c9c5443f
+[INFO ] 08-07-2023 18:13:47 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:13:49 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:13:49 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:13:56 [main] LogUtils - Đây là test case  testUploadFileWithSendKeys chạy thành công
+[INFO ] 08-07-2023 18:21:14 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:21:16 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:21:16 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:21:20 [main] LogUtils - Set text D:\HocTester-AnhTester-Course\SeleniumJava\Course_Selenium_Java_26022023\SeleniumTestNG042023Parallel\src\test\java\quangtester\com\Bai34_UploadFile\FileUseUpLoad\tho7mau.jpg on elementBy.xpath: //input[@type='file']
+[ERROR] 08-07-2023 18:21:20 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:21:20 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 18:25:38 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:25:41 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:25:41 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:25:44 [main] LogUtils - Set text D:\HocTester-AnhTester-Course\SeleniumJava\Course_Selenium_Java_26022023\SeleniumTestNG042023Parallel\src\test\java\quangtester\com\Bai34_UploadFile\FileUseUpLoad\tho7mau.jpg on elementBy.xpath: //input[@type='file']
+[ERROR] 08-07-2023 18:25:45 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:25:45 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 18:26:28 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:26:31 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:26:31 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[ERROR] 08-07-2023 18:26:35 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:26:35 [main] LogUtils - Chi tiết lỗi :org.openqa.selenium.WebDriverException: unknown error: path is not absolute: src/test/java/quangtester/com/Bai34_UploadFile/FileUseUpLoad/tho7mau.jpg
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06242d0fe993d4fbd756e061ef094fa4, sendKeysToElement {id=5539A54FEC8653EF285060A92FC18714_element_2, value=[Ljava.lang.CharSequence;@14980819}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, goog:chromeOptions: {debuggerAddress: localhost:55689}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55689/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (06242d0fe993d4fbd756e061ef094fa4)] -> xpath: //input[@type='file']]
+Session ID: 06242d0fe993d4fbd756e061ef094fa4
+[INFO ] 08-07-2023 18:28:02 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:28:04 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:28:05 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:28:08 [main] LogUtils - Set text D:\HocTester-AnhTester-Course\SeleniumJava\Course_Selenium_Java_26022023\SeleniumTestNG042023Parallel\src\test\java\quangtester\com\Bai34_UploadFile\FileUseUpLoad\tho7mau.jpg on elementBy.xpath: //input[@type='file']
+[ERROR] 08-07-2023 18:28:08 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:28:09 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 18:28:29 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:28:31 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:28:31 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:28:35 [main] LogUtils - Set text D:\HocTester-AnhTester-Course\SeleniumJava\Course_Selenium_Java_26022023\SeleniumTestNG042023Parallel\src\test\java\quangtester\com\Bai34_UploadFile\FileUseUpLoad\tho7mau.jpg on elementBy.xpath: //input[@type='file']
+[ERROR] 08-07-2023 18:28:35 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:28:35 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 18:29:58 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:30:00 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:30:00 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[ERROR] 08-07-2023 18:30:04 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:30:04 [main] LogUtils - Chi tiết lỗi :java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+[INFO ] 08-07-2023 18:34:17 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:34:19 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:34:19 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:34:23 [main] LogUtils - Set text D:\HocTester-AnhTester-Course\SeleniumJava\Course_Selenium_Java_26022023\SeleniumTestNG042023Parallel/src/test/java/quangtester/com/Bai34_UploadFile/FileUseUpLoad/tho7mau.jpg on elementBy.xpath: //input[@type='file']
+[ERROR] 08-07-2023 18:34:23 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:34:24 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 18:35:23 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:35:26 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:35:26 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:35:30 [main] LogUtils - Set text D:\HocTester-AnhTester-Course\SeleniumJava\Course_Selenium_Java_26022023\SeleniumTestNG042023Parallel/src/test/java/quangtester/com/Bai34_UploadFile/FileUseUpLoad/tho7mau.jpg on elementBy.xpath: //input[@name='upfile']
+[ERROR] 08-07-2023 18:35:30 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:35:30 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 18:36:45 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:36:47 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:36:51 [main] LogUtils - Set text D:\HocTester-AnhTester-Course\SeleniumJava\Course_Selenium_Java_26022023\SeleniumTestNG042023Parallel/src/test/java/quangtester/com/Bai34_UploadFile/FileUseUpLoad/tho7mau.jpg on elementBy.xpath: //input[@name='upfile']
+[ERROR] 08-07-2023 18:36:51 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:36:51 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 18:37:43 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:37:46 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[ERROR] 08-07-2023 18:37:46 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:37:46 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "quangtester.com.drivers.DriverManager.getDriver()" is null
+[INFO ] 08-07-2023 18:38:25 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:38:28 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[ERROR] 08-07-2023 18:38:32 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:38:32 [main] LogUtils - Chi tiết lỗi :java.lang.IllegalArgumentException: Input must be set
+[INFO ] 08-07-2023 18:39:22 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:39:25 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[ERROR] 08-07-2023 18:39:29 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:39:29 [main] LogUtils - Chi tiết lỗi :java.lang.IllegalArgumentException: Input must be set
+[INFO ] 08-07-2023 18:40:43 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:40:45 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:40:45 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:40:49 [main] LogUtils - Set text D:\HocTester-AnhTester-Course\SeleniumJava\Course_Selenium_Java_26022023\SeleniumTestNG042023Parallel/src/test/java/quangtester/com/Bai34_UploadFile/FileUseUpLoad/acc clone.txt on elementBy.xpath: //input[@type='file']
+[ERROR] 08-07-2023 18:40:49 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:40:49 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 18:41:21 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:41:24 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:41:24 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:41:27 [main] LogUtils - Set text D:\HocTester-AnhTester-Course\SeleniumJava\Course_Selenium_Java_26022023\SeleniumTestNG042023Parallel/src/test/java/quangtester/com/Bai34_UploadFile/FileUseUpLoad/acc clone.txt on elementBy.xpath: //input[@name='upfile']
+[ERROR] 08-07-2023 18:41:28 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:41:28 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 18:42:06 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:42:08 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:42:08 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:42:12 [main] LogUtils - Set text D:\HocTester-AnhTester-Course\SeleniumJava\Course_Selenium_Java_26022023\SeleniumTestNG042023Parallel/src/test/java/quangtester/com/Bai34_UploadFile/FileUseUpLoad/acc clone.txt on elementBy.xpath: //input[@name='upfile']
+[ERROR] 08-07-2023 18:42:12 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:42:12 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 18:43:25 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:43:27 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:43:27 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:43:31 [main] LogUtils - Set text D:\HocTester-AnhTester-Course\SeleniumJava\Course_Selenium_Java_26022023\SeleniumTestNG042023Parallel/src/test/java/quangtester/com/Bai34_UploadFile/FileUseUpLoad/acc clone.txt on elementBy.xpath: //input[@name='upfile']
+[ERROR] 08-07-2023 18:43:31 [main] LogUtils - Đây là test case testUploadFileWithSendKeys thất bại
+[ERROR] 08-07-2023 18:43:31 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 18:44:43 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:44:45 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:44:45 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:44:54 [main] LogUtils - Đây là test case  testUploadFileWithSendKeys chạy thành công
+[INFO ] 08-07-2023 18:45:31 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:45:33 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:45:34 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:45:42 [main] LogUtils - Đây là test case  testUploadFileWithSendKeys chạy thành công
+[INFO ] 08-07-2023 18:48:51 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:48:54 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 18:48:54 [main] LogUtils - Running Test Case :testUploadFileWithSendKeys
+[INFO ] 08-07-2023 18:49:00 [main] LogUtils - Đây là test case  testUploadFileWithSendKeys chạy thành công
+[INFO ] 08-07-2023 19:58:04 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 19:58:07 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 19:58:07 [main] LogUtils - Running Test Case :testUploadFileWithRobotClass
+[INFO ] 08-07-2023 19:58:22 [main] LogUtils - Đây là test case  testUploadFileWithRobotClass chạy thành công
+[INFO ] 08-07-2023 19:59:15 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 19:59:17 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 19:59:18 [main] LogUtils - Running Test Case :testUploadFileWithRobotClass
+[INFO ] 08-07-2023 19:59:33 [main] LogUtils - Đây là test case  testUploadFileWithRobotClass chạy thành công
+[INFO ] 08-07-2023 20:02:23 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 20:02:26 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 20:02:26 [main] LogUtils - Running Test Case :testUploadFileWithRobotClass
+[INFO ] 08-07-2023 20:02:41 [main] LogUtils - Get text of element By.xpath: //div[@id='upload_stats_text']
+[INFO ] 08-07-2023 20:02:41 [main] LogUtils - ===> Text :Selected files 1, size 51.00 KB
+[ERROR] 08-07-2023 20:02:42 [main] LogUtils - Đây là test case testUploadFileWithRobotClass thất bại
+[ERROR] 08-07-2023 20:02:42 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 20:02:57 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 20:03:00 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 20:03:00 [main] LogUtils - Running Test Case :testUploadFileWithRobotClass
+[INFO ] 08-07-2023 20:03:15 [main] LogUtils - Get text of element By.xpath: //div[@id='upload_stats_text']
+[INFO ] 08-07-2023 20:03:15 [main] LogUtils - ===> Text :Selected files 1, size 51.00 KB
+[ERROR] 08-07-2023 20:03:15 [main] LogUtils - Đây là test case testUploadFileWithRobotClass thất bại
+[ERROR] 08-07-2023 20:03:15 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 20:04:39 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 20:04:42 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 20:04:42 [main] LogUtils - Running Test Case :testUploadFileWithRobotClass
+[INFO ] 08-07-2023 20:04:57 [main] LogUtils - Get text of element By.xpath: //div[@id='upload_stats_text']
+[INFO ] 08-07-2023 20:04:57 [main] LogUtils - ===> Text :Selected files 1, size 51.00 KB
+[ERROR] 08-07-2023 20:04:58 [main] LogUtils - Đây là test case testUploadFileWithRobotClass thất bại
+[ERROR] 08-07-2023 20:04:58 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 20:20:31 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 20:20:34 [main] LogUtils - Running Test Case :testUploadFileWithRobotClass
+[INFO ] 08-07-2023 20:20:49 [main] LogUtils - Get text of element By.xpath: //div[@id='upload_stats_text']
+[INFO ] 08-07-2023 20:20:49 [main] LogUtils - ===> Text :Selected files 1, size 51.00 KB
+[INFO ] 08-07-2023 20:20:49 [main] LogUtils - Đây là test case  testUploadFileWithRobotClass chạy thành công
+[INFO ] 08-07-2023 20:24:11 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 20:24:14 [main] LogUtils - Running Test Case :testUploadFileWithRobotClass
+[INFO ] 08-07-2023 20:24:30 [main] LogUtils - Get text of element By.xpath: //div[@id='upload_stats_text']
+[INFO ] 08-07-2023 20:24:30 [main] LogUtils - ===> Text :Selected files 1, size 51.00 KB
+[ERROR] 08-07-2023 20:24:30 [main] LogUtils - Đây là test case testUploadFileWithRobotClass thất bại
+[ERROR] 08-07-2023 20:24:30 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 22:39:38 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 22:39:41 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 22:39:41 [main] LogUtils - Running Test Case :ClientTestDataTable
+[INFO ] 08-07-2023 22:39:55 [main] LogUtils - Open URL :https://rise.fairsketch.com/signin
+[ERROR] 08-07-2023 22:39:56 [main] LogUtils - Đây là test case ClientTestDataTable thất bại
+[ERROR] 08-07-2023 22:39:56 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 22:41:35 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 22:41:38 [main] LogUtils - Running Test Case :ClientTestDataTable
+[INFO ] 08-07-2023 22:41:52 [main] LogUtils - Open URL :https://rise.fairsketch.com/signin
+[ERROR] 08-07-2023 22:41:52 [main] LogUtils - Đây là test case ClientTestDataTable thất bại
+[ERROR] 08-07-2023 22:41:53 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 22:42:55 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 22:42:58 [main] LogUtils - Running Test Case :ClientTestDataTable
+[INFO ] 08-07-2023 22:43:13 [main] LogUtils - Open URL :https://rise.fairsketch.com/signin
+[ERROR] 08-07-2023 22:43:13 [main] LogUtils - Đây là test case ClientTestDataTable thất bại
+[ERROR] 08-07-2023 22:43:14 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 22:44:25 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 22:44:28 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 22:44:28 [main] LogUtils - Running Test Case :ClientTestDataTable
+[INFO ] 08-07-2023 22:44:46 [main] LogUtils - Open URL :https://rise.fairsketch.com/signin
+[ERROR] 08-07-2023 22:44:46 [main] LogUtils - Đây là test case ClientTestDataTable thất bại
+[ERROR] 08-07-2023 22:44:46 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 22:46:29 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 22:46:32 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 22:46:32 [main] LogUtils - Running Test Case :ClientTestDataTable
+[INFO ] 08-07-2023 22:46:45 [main] LogUtils - Open URL :https://rise.fairsketch.com/signin
+[ERROR] 08-07-2023 22:46:46 [main] LogUtils - Đây là test case ClientTestDataTable thất bại
+[ERROR] 08-07-2023 22:46:46 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 22:48:30 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 22:48:33 [main] LogUtils - Running Test Case :ClientTestDataTable
+[ERROR] 08-07-2023 22:48:33 [main] LogUtils - Đây là test case ClientTestDataTable thất bại
+[ERROR] 08-07-2023 22:48:33 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "quangtester.com.drivers.DriverManager.getDriver()" is null
+[INFO ] 08-07-2023 22:50:33 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 22:50:36 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 22:50:36 [main] LogUtils - Running Test Case :ClientTestDataTable
+[INFO ] 08-07-2023 22:50:50 [main] LogUtils - Open URL :https://rise.fairsketch.com/signin
+[ERROR] 08-07-2023 22:50:50 [main] LogUtils - Đây là test case ClientTestDataTable thất bại
+[ERROR] 08-07-2023 22:50:51 [main] LogUtils - Chi tiết lỗi :java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because the return value of "quangtester.com.reports.ExtentReport.ExtentTestManager.getTest()" is null
+[INFO ] 08-07-2023 22:53:24 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 22:53:27 [main] LogUtils - Loaded all properties file. 
+[INFO ] 08-07-2023 22:53:27 [main] LogUtils - Running Test Case :ClientTestDataTable
+[INFO ] 08-07-2023 22:53:41 [main] LogUtils - Open URL :https://rise.fairsketch.com/signin
+[INFO ] 08-07-2023 22:53:48 [main] LogUtils - Click on element :By.xpath: //button[normalize-space()='Sign in']
+[INFO ] 08-07-2023 22:53:51 [main] LogUtils - Click on element :By.xpath: //span[normalize-space()='Clients']
+[INFO ] 08-07-2023 22:53:52 [main] LogUtils - Click on element :By.xpath: //a[contains(text(),'Clients')]
+[INFO ] 08-07-2023 22:53:58 [main] LogUtils - Click on element :By.xpath: //div[@id='client-table_filter']/following-sibling::div[2]
+[INFO ] 08-07-2023 22:53:58 [main] LogUtils - Set text VIP on elementBy.xpath: //div[@id='select2-drop']//div[@class='select2-search']//input
+[INFO ] 08-07-2023 22:54:01 [main] LogUtils - Đây là test case  ClientTestDataTable chạy thành công
+[INFO ] 09-07-2023 00:38:02 [main] LogUtils - Loaded all properties file. 
+[INFO ] 09-07-2023 00:38:05 [main] LogUtils - Loaded all properties file. 
+[INFO ] 09-07-2023 00:38:05 [main] LogUtils - Running Test Case :testCheckPaginationOnTable
+[INFO ] 09-07-2023 00:38:07 [main] LogUtils - Open URL :https://datatables.net/
+[INFO ] 09-07-2023 00:38:07 [main] LogUtils - Set text LonDon on elementBy.xpath: //input[@type='search']
+[INFO ] 09-07-2023 00:38:07 [main] LogUtils - Get text of element By.xpath: //div[@id='example_info']
+[INFO ] 09-07-2023 00:38:07 [main] LogUtils - ===> Text :Showing 1 to 10 of 12 entries (filtered from 57 total entries)
+[ERROR] 09-07-2023 00:38:10 [main] LogUtils - Đây là test case testCheckPaginationOnTable thất bại
+[ERROR] 09-07-2023 00:38:10 [main] LogUtils - Chi tiết lỗi :org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table//tbody/tr[11]/td[3]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c5179be0b1a746bce42d81515c42c922, findElement {using=xpath, value=//table//tbody/tr[11]/td[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, goog:chromeOptions: {debuggerAddress: localhost:58887}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58887/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c5179be0b1a746bce42d81515c42c922
+[INFO ] 09-07-2023 00:40:23 [main] LogUtils - Loaded all properties file. 
+[INFO ] 09-07-2023 00:40:25 [main] LogUtils - Loaded all properties file. 
+[INFO ] 09-07-2023 00:40:25 [main] LogUtils - Running Test Case :testCheckPaginationOnTable
+[INFO ] 09-07-2023 00:40:28 [main] LogUtils - Open URL :https://datatables.net/
+[INFO ] 09-07-2023 00:40:28 [main] LogUtils - Set text LonDon on elementBy.xpath: //input[@type='search']
+[INFO ] 09-07-2023 00:40:28 [main] LogUtils - Get text of element By.xpath: //div[@id='example_info']
+[INFO ] 09-07-2023 00:40:28 [main] LogUtils - ===> Text :Showing 1 to 10 of 12 entries (filtered from 57 total entries)
+[INFO ] 09-07-2023 00:40:31 [main] LogUtils - Click on element :By.xpath: //a[@id='example_next']
+[INFO ] 09-07-2023 00:40:33 [main] LogUtils - Đây là test case  testCheckPaginationOnTable chạy thành công

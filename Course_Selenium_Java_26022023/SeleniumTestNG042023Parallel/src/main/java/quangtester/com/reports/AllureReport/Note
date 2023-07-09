@@ -1,0 +1,21 @@
+1. Các ghi chú trong Allure Report:
+    @Epic
+    @Features
+    @Stories/@Story
+    @Severity(SeverityLevel.BLOCKER)
+    @Description("In this cool test we will check cool thing")
+    @Step
+    @Attachment
+    @Link
+
+2. Mở Allure Reports sau khi chạy testcase
+    B1 : Chạy testcase
+    B2 : Mở "Terminal" Hoặc  dùng phím tắt Alt + F12
+    B3 : Chạy lệnh trong Terminal:  allure serve target/allure-results
+        => Sinh ra folder allure-results
+    B4 : Sau khi chạy lệnh xong để tắt lệnh trước đó thì dùng :
+        a. Dùng Ctrl + C
+        b. Nhấn Y
+    B5 : Chuyển source vừa chạy từ dạng JSON sang source chứa file HTML :
+        allure generate target/allure-results -o target/allure-report/ --clean
+        => Sinh ra folder allure-report

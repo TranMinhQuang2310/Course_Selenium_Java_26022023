@@ -1,6 +1,7 @@
 package quangtester.com.keywords;
 
 import com.aventstack.extentreports.Status;
+import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -8,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import quangtester.com.drivers.DriverManager;
-import quangtester.com.reports.ExtentTestManager;
+import quangtester.com.reports.ExtentReport.ExtentTestManager;
 import quangtester.com.utils.LogUtils;
 
 import java.awt.*;
@@ -29,12 +30,13 @@ public class WebUI {
     }
 
     //Tạo hàm hover
+    @Step("Hover on element {0}")
     public static void hoverOnElement(By by) {
         waitForElementVisible_UseSetCungTimeOut(by);
         Actions action = new Actions(DriverManager.getDriver());
         action.moveToElement(getWebElement(by));
         LogUtils.info("Hover on element :" + by);
-        ExtentTestManager.logMessage(Status.PASS,"Hover on element :" + by);
+        //ExtentTestManager.logMessage(Status.PASS,"Hover on element :" + by);
     }
 
     //Tạo hàm hightlight
@@ -52,6 +54,13 @@ public class WebUI {
         return getWebElement(by);
     }
 
+    /*
+    Bài 33 :
+        - Thêm cái @Step là để gắn step detail vào report
+        - {0}, {1},...đại diện cho giá trị của các tham số bên dưới phương thức.
+        Theo thứ tự luôn nhé. Và bắt đầu từ 0 (tham số thứ nhất)
+    */
+    @Step("Right click on element {0}")
     //Tạo hàm rightClick (click chuột phải)
     //context click => Nghĩa là click chuột phải
     public static void rightClickElement(By by) {
@@ -59,7 +68,7 @@ public class WebUI {
         Actions action = new Actions(DriverManager.getDriver());
         action.contextClick(getWebElement(by));
         LogUtils.info("Right click on element " + by);
-        ExtentTestManager.logMessage(Status.PASS,"Right click on element " + by);
+        //ExtentTestManager.logMessage(Status.PASS,"Right click on element " + by);
     }
 
     //Tạo 1 hàm in ra 1 câu thông báo
@@ -68,67 +77,73 @@ public class WebUI {
     }
 
     //Tạo 1 hàm để Open URL
+    @Step("Open URL {0}")
     public static void openURL(String URL) {
         DriverManager.getDriver().get(URL);
         waitForPageLoaded();
         LogUtils.info("Open URL :" + URL);
-        ExtentTestManager.logMessage(Status.PASS,"Open URL :" + URL);
+        //ExtentTestManager.logMessage(Status.PASS,"Open URL :" + URL);
 
     }
 
     //Tạo hàm getCurrentURL
+    @Step("Get Current URL")
     public static String getCurrentURL() {
         waitForPageLoaded();
         LogUtils.info("Get Current URL :" + DriverManager.getDriver().getCurrentUrl());
-        ExtentTestManager.logMessage(Status.PASS,"Get Current URL :" + DriverManager.getDriver().getCurrentUrl());
+        //ExtentTestManager.logMessage(Status.PASS,"Get Current URL :" + DriverManager.getDriver().getCurrentUrl());
         return DriverManager.getDriver().getCurrentUrl();
     }
 
     //Tạo hàm để click vào 1 element
-
+    @Step("Click on element {0}")
     public static void clickElement(By by) {
         waitForElementVisible_UseSetCungTimeOut(by);
         //Đặt hàm highlight để trước khi click vào element sẽ highlight lên
         highLightElement(by);
         getWebElement(by).click();
         LogUtils.info("Click on element :" + by);
-        ExtentTestManager.logMessage(Status.PASS,"Click on element :" + by);
+        //ExtentTestManager.logMessage(Status.PASS,"Click on element :" + by);
     }
 
     //Tạo hàm để sendkey
+    @Step("Set text {1} on element {0}")
     public static void setText(By by,String value) {
         waitForElementVisible_UseSetCungTimeOut(by);
         getWebElement(by).sendKeys(value);
         LogUtils.info("Set text " + value + " on element" + by);
-        ExtentTestManager.logMessage(Status.PASS,"Set text " + value + " on element" + by);
+        //ExtentTestManager.logMessage(Status.PASS,"Set text " + value + " on element" + by);
     }
 
 
     //Tạo hàm để isDisplayed
+    @Step("Element is Displayed {0}")
     public static boolean checkIsDisplayed(By by) {
         waitForElementVisible_UseSetCungTimeOut(by);
         LogUtils.info("Element is Displayed  :" + getWebElement(by).isDisplayed());
-        ExtentTestManager.logMessage(Status.PASS,"Element is Displayed  :" + getWebElement(by).isDisplayed());
+        //ExtentTestManager.logMessage(Status.PASS,"Element is Displayed  :" + getWebElement(by).isDisplayed());
         return getWebElement(by).isDisplayed();
     }
 
     //Tạo hàm để getText
+    @Step("Get text of element {0}")
     public static String getTextElement(By by) {
         waitForElementVisible_UseSetCungTimeOut(by);
         LogUtils.info("Get text of element " + by);
         LogUtils.info("===> Text :" + getWebElement(by).getText());
-        ExtentTestManager.logMessage(Status.PASS,"Get text of element " + by);
-        ExtentTestManager.logMessage(Status.INFO,"===> Text :" + getWebElement(by).getText());
+        //ExtentTestManager.logMessage(Status.PASS,"Get text of element " + by);
+        //ExtentTestManager.logMessage(Status.INFO,"===> Text :" + getWebElement(by).getText());
         return getWebElement(by).getText();
     }
 
     //Tạo hàm để getAttribute
+    @Step("Get attribute {1} value of element {0}")
     public static String getAttributeElement(By by , String attributeName) {
         waitForElementVisible_UseSetCungTimeOut(by);
         LogUtils.info("Get attribute value of element :" +by);
         LogUtils.info("===> Attribute value :" + getWebElement(by).getAttribute(attributeName));
-        ExtentTestManager.logMessage(Status.PASS,"Get attribute value of element :" +by);
-        ExtentTestManager.logMessage(Status.INFO,"===> Attribute value :" + getWebElement(by).getAttribute(attributeName));
+        //ExtentTestManager.logMessage(Status.PASS,"Get attribute value of element :" +by);
+        //ExtentTestManager.logMessage(Status.INFO,"===> Attribute value :" + getWebElement(by).getAttribute(attributeName));
         return getWebElement(by).getAttribute(attributeName);
     }
 

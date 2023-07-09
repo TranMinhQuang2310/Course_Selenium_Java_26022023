@@ -1,4 +1,4 @@
-package quangtester.com.reports;
+package quangtester.com.reports.ExtentReport;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;

@@ -1,14 +1,14 @@
 package quangtester.com.Bai33_ExtentReport;
 
 import com.aventstack.extentreports.Status;
-import lombok.extern.java.Log;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import quangtester.com.helpers.Bai30_CaptureHelper;
 import quangtester.com.helpers.PropertiesHelper;
-import quangtester.com.reports.ExtentReportManager;
-import quangtester.com.reports.ExtentTestManager;
+import quangtester.com.reports.AllureReport.AllureManager;
+import quangtester.com.reports.ExtentReport.ExtentReportManager;
+import quangtester.com.reports.ExtentReport.ExtentTestManager;
 import quangtester.com.utils.LogUtils;
 
 public class Bai33_TestListener implements ITestListener {
@@ -66,6 +66,10 @@ public class Bai33_TestListener implements ITestListener {
         ExtentTestManager.addScreenShot(result.getName());
         ExtentTestManager.logMessage(Status.FAIL, result.getThrowable().toString());
         ExtentTestManager.logMessage(Status.FAIL, result.getName() + " thất bại.");
+
+        //Allure Report
+        AllureManager.saveTextLog(result.getName() + " is failed.");
+        AllureManager.saveScreenshotPNG();
 
     }
 
